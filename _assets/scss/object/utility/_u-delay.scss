@@ -1,0 +1,12 @@
+@use "foundation/global";
+
+// Utility transition-delay
+//--------------------------------------------------------------------------
+
+.u-delay {
+  @for $i from 1 through 13 {
+    &0#{$i} {
+      transition-delay: $i * 0.1s;
+    }
+  }
+}

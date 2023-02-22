@@ -1,0 +1,40 @@
+@use "foundation/global";
+
+// Layout aboutページ
+//--------------------------------------------------------------------------
+
+// プロイフィール
+.l-lower-about__profile {
+  padding-bottom: 80px;
+
+  @include global.mq(md) {
+    padding-bottom: 160px;
+  }
+}
+
+// 使用技術
+.l-lower-about__skills {
+  padding: 80px 0;
+
+  @include global.mq(md) {
+    padding: 60px 0 180px;
+  }
+}
+
+// バリュ-
+.l-lower-about__value {
+  padding: 80px 0 160px;
+
+  @include global.mq(md) {
+    padding: 60px 0 320px;
+  }
+}
+
+// 経歴
+.l-lower-about__career {
+  padding: 80px 0;
+
+  @include global.mq(md) {
+    padding: 60px 0 180px;
+  }
+}

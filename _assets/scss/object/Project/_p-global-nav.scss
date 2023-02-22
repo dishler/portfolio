@@ -1,0 +1,164 @@
+@use "foundation/global";
+
+// Project グローバルナビゲーション
+//--------------------------------------------------------------------------
+
+.p-global-nav {
+  height: 100%;
+}
+
+.p-global-nav__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.p-global-nav__item {
+  display: flex;
+  align-items: center;
+  height: 100%;
+
+  &:not(:first-child) {
+    margin-left: 28px;
+  }
+}
+
+.p-global-nav__link {
+  position: relative;
+  display: inline-block;
+  height: 1.7em;
+  @include global.fz(16);
+  @include global.lh(1.7);
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background-color: global.$color-primary;
+    transform: scale(0, 1);
+    transform-origin: right top;
+    transition: transform 0.6s global.ease(out-quint);
+
+    @include global.mq(lax) {
+      background-color: global.$color-primary;
+    }
+  }
+  &:hover,
+  &:focus {
+    &::before {
+      transform-origin: left top;
+      transform: scale(1, 1);
+    }
+  }
+}
+
+.p-global-nav__link--blank {
+  padding-right: 18px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 52%;
+    transform: translateY(-50%) rotate(-90deg);
+    right: 0;
+    width: 13px;
+    height: 13px;
+      background-image: url('data: image/svg+xml;charset=utf8,%3Csvg%20class%3D%22p-contact-details__arrow-svg%22%20width%3D%2224px%22%20height%3D%2224px%22%20viewBox%3D%220%200%2014%2014%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20%3E%20%3Ctitle%3Earrow-up-right%3C%2Ftitle%3E%20%3Cg%20id%3D%22Page-1%22%20stroke%3D%22none%22%20stroke-width%3D%221%22%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%20%3Cg%20id%3D%22Artboard%22%20transform%3D%22translate(-1019.000000%2C%20-279.000000)%22%20stroke%3D%22%23000%22%20stroke-width%3D%221.5%22%3E%20%3Cg%20id%3D%22arrow-up-right%22%20transform%3D%22translate(1026.000000%2C%20286.000000)%20rotate(90.000000)%20translate(-1026.000000%2C%20-286.000000)%20translate(1020.000000%2C%20280.000000)%22%3E%20%3Cpolyline%20id%3D%22Path%22%20points%3D%222.76923077%200%2012%200%2012%209.23076923%22%3E%3C%2Fpolyline%3E%20%3Cline%20x1%3D%2212%22%20y1%3D%220%22%20x2%3D%220%22%20y2%3D%2212%22%20id%3D%22Path%22%3E%3C%2Fline%3E%20%3C%2Fg%3E%20%3C%2Fg%3E%20%3C%2Fg%3E%20%3C%2Fsvg%3E');    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+    @include global.mq(lax) {
+      background-image: url('data: image/svg+xml;charset=utf8,%3Csvg%20class%3D%22p-contact-details__arrow-svg%22%20width%3D%2224px%22%20height%3D%2224px%22%20viewBox%3D%220%200%2014%2014%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20%3E%20%3Ctitle%3Earrow-up-right%3C%2Ftitle%3E%20%3Cg%20id%3D%22Page-1%22%20stroke%3D%22none%22%20stroke-width%3D%221%22%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%20%3Cg%20id%3D%22Artboard%22%20transform%3D%22translate(-1019.000000%2C%20-279.000000)%22%20stroke%3D%22%23000%22%20stroke-width%3D%221.5%22%3E%20%3Cg%20id%3D%22arrow-up-right%22%20transform%3D%22translate(1026.000000%2C%20286.000000)%20rotate(90.000000)%20translate(-1026.000000%2C%20-286.000000)%20translate(1020.000000%2C%20280.000000)%22%3E%20%3Cpolyline%20id%3D%22Path%22%20points%3D%222.76923077%200%2012%200%2012%209.23076923%22%3E%3C%2Fpolyline%3E%20%3Cline%20x1%3D%2212%22%20y1%3D%220%22%20x2%3D%220%22%20y2%3D%2212%22%20id%3D%22Path%22%3E%3C%2Fline%3E%20%3C%2Fg%3E%20%3C%2Fg%3E%20%3C%2Fg%3E%20%3C%2Fsvg%3E');    }
+  }
+}
+
+// ヘッダーの乗算が外れている時
+.is-blend-normal {
+  .p-global-nav__link {
+    color: global.$color-primary;;
+
+    &::before {
+      @include global.mq(lax) {
+        background-color: global.$color-primary;;
+      }
+    }
+  }
+  .p-global-nav__link--blank {
+    &::after {
+      background-image: url('data: image/svg+xml;charset=utf8,%3Csvg%20class%3D%22p-contact-details__arrow-svg%22%20width%3D%2224px%22%20height%3D%2224px%22%20viewBox%3D%220%200%2014%2014%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20%3E%20%3Ctitle%3Earrow-up-right%3C%2Ftitle%3E%20%3Cg%20id%3D%22Page-1%22%20stroke%3D%22none%22%20stroke-width%3D%221%22%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%20%3Cg%20id%3D%22Artboard%22%20transform%3D%22translate(-1019.000000%2C%20-279.000000)%22%20stroke%3D%22%23000%22%20stroke-width%3D%221.5%22%3E%20%3Cg%20id%3D%22arrow-up-right%22%20transform%3D%22translate(1026.000000%2C%20286.000000)%20rotate(90.000000)%20translate(-1026.000000%2C%20-286.000000)%20translate(1020.000000%2C%20280.000000)%22%3E%20%3Cpolyline%20id%3D%22Path%22%20points%3D%222.76923077%200%2012%200%2012%209.23076923%22%3E%3C%2Fpolyline%3E%20%3Cline%20x1%3D%2212%22%20y1%3D%220%22%20x2%3D%220%22%20y2%3D%2212%22%20id%3D%22Path%22%3E%3C%2Fline%3E%20%3C%2Fg%3E%20%3C%2Fg%3E%20%3C%2Fg%3E%20%3C%2Fsvg%3E');
+    }
+  }
+}
+
+
+.dropdown {
+  position: relative;
+}
+
+.text-box {
+  margin-right: 10px;
+}
+
+.dropdown::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 54px;
+  z-index: 1;
+  width: 8px;
+  height: 8px;
+  border: 2px solid #333;
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
+  transform: rotate(-45deg);
+  transition: 0.5s;
+  pointer-events: none;
+}
+
+.dropdown.active::before {
+  top: 10px;
+  transform: rotate(-225deg);
+}
+
+.dropdown div {
+  position: relative;
+  cursor: pointer;
+  background: #fff;
+  font-size: 1em;
+  border: none;
+  outline: none;
+
+}
+
+.dropdown .options {
+  position: absolute;
+  top: 30px;
+  width: 100%;
+  background: #fff;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  overflow: hidden;
+  display: none;
+}
+
+.dropdown.active .options::after {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.dropdown .options a {
+  padding: 12px 20px;
+  cursor: pointer;
+  text-decoration: none;
+
+}
+
+.dropdown .options div:hover {
+  background: #62baea;
+  color: green;
+}

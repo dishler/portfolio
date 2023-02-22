@@ -1,0 +1,33 @@
+@use "foundation/global";
+
+// Layout フッター
+//--------------------------------------------------------------------------
+
+.l-footer {
+  position: relative;
+  z-index: map-get(global.$layer, footer);
+  width: 100%;
+  padding-top: 15vh;
+  padding-bottom: 15vh;
+
+  @include global.mq(lax) {
+    padding: 0;
+    height: 100vh;
+  }
+}
+
+.l-footer__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: inherit;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1040px;
+  width: 90%;
+
+  @include global.mq(md) {
+    width: 85%;
+  }
+}

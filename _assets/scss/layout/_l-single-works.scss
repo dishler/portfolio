@@ -1,0 +1,15 @@
+@use "foundation/global";
+
+// Layout 制作実績詳細ページ
+//--------------------------------------------------------------------------
+.l-single-works__first-view {
+  padding: 10vh 0 8vh 2vw;
+
+  @include global.mq(lax) {
+    padding: 1vw 0 7vw 0vw;
+  }
+}
+
+.l-single-works__detail {
+  padding-bottom: max(134px, #{global.vw(260)});
+}

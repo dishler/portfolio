@@ -1,0 +1,165 @@
+<% let pageId='home' ; %>
+
+  <%- include('./common/_header', {pageId:pageId }) %>
+
+    <main class="l-home" data-barba="container" data-barba-namespace="home">
+      <div class="l-container">
+        <%# ファーストビュー %>
+          <section id="js-first-view" class="p-first-view l-home__first-view">
+            <div class="p-first-view__inner">
+              <h1 class="p-first-view__heading" style="transform: translate(0px, 0px);">
+                <span class="is-wrap p-first-view__heading-text u-hidden-lax-up">
+                  <span class="is-slide-up">
+                    Dmytro Ishler
+                  </span>
+                </span>
+                <span class="is-wrap p-first-view__heading-text u-hidden-lax-up">
+                  <span class="is-slide-up u-delay01">
+                    Portfolio Website.
+                  </span>
+                </span>
+                <span class="is-wrap u-hidden-lax-down">
+                  <span class="is-slide-up">
+                    DMYTRO ISHLER
+                  </span>
+                </span>
+                <span class="is-wrap u-hidden-lax-down">
+                  <span class="is-slide-up u-delay01">
+                    PORTFOLIO WEBSITE.
+                  </span>
+                </span>
+              </h1>
+              <span class="is-wrap" style="transform: translate(0px, 0px);">
+                <p class="p-first-view__text is-slide-up u-delay03">
+                  UI/UX designer / Webflow developer based in Lviv Ukraine
+                </p>
+              </span>
+            </div>
+          </section>
+          <%# / ファーストビュー %>
+      </div>
+
+      <div class="l-home__contents">
+        <div class="l-container">
+          <%# 私について %>
+            <section class="p-home-about l-home__about">
+              <h2 class="p-home-about__heading u-hidden-lax-down" data-scroll data-scroll-speed="-0.7"
+                data-scroll-direction="horizontal">
+                Product mindset
+              </h2>
+              <div class="p-home-about__profile">
+                <h3 class="p-home-about__name">
+                  <span class="p-home-about__name-en">
+                    About me
+                  </span>
+                </h3>
+                <p class="p-home-about__text">
+                  I have 2+ years of experience as a UX designer, where I have successfully led end-to-end design
+                  projects for a variety
+                  of clients. I have a unique set of skills that can help businesses and organizations improve their
+                  products and
+                  services.
+                </p>
+                <div class="p-home-about__link-wrapper">
+                  <a href="/about/" class="c-button-primary">
+                    <span class="c-button-primary__text">
+                      <span class="c-button-primary__text-inner" data-text="About me">
+                        View more
+                      </span>
+                    </span>
+                    <span class="c-button-primary__line"></span>
+                  </a>
+                </div>
+              </div>
+            </section>
+            <%# / 私について %>
+        </div>
+
+        <div class="l-container l-container--large">
+          <%# 制作実績 %>
+            <section class="p-works l-home__works">
+              <h2 class="u-visually-hidden">制作実績</h2>
+              <div class="p-works__inner">
+                <%# 制作実績 - コンテンツ _assets/ejs/data/site.jsonにて管理 %>
+                  <ul class="p-works__contents u-hidden-lax-down" data-scroll data-scroll-sticky
+                    data-scroll-target="#js-works-mask">
+                    <% for(let work in jsonData.works){ %>
+                      <li data-id="<%= jsonData.works[work].dataId %>" class="p-works__content p-works-content">
+                        <div class="p-works-content__number">
+                          <span class="is-slide-mask">
+                          </span>
+                        </div>
+                        <div class="p-works-content__body">
+                          <h3 class="p-works-content__title is-slide-mask">
+                            <%= jsonData.works[work].name %>
+                          </h3><br>
+                          <p class="p-works-content__category is-slide-mask">
+                            <%= jsonData.works[work].category %>
+                          </p><br>
+                          <p class="p-works-content__text is-slide-mask">
+                            <%= jsonData.works[work].description %>
+                          </p><br>
+                          <div class="p-works-content__link-wrapper is-slide-mask">
+                            <a href="<%= jsonData.works[work].slug %>" class="c-button-primary c-button-primary--large">
+                              <span class="c-button-primary__text">
+                                <span class="c-button-primary__text-inner" data-text="<%= jsonData.works[work].name %>">
+                                  View more
+                                </span>
+                              </span>
+                              <span class="c-button-primary__line"></span>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="p-works-content__scope-wrapper">
+                          <p class="p-works-content__scope is-slide-mask">
+                            <%= jsonData.works[work].scope %>
+                          </p>
+                        </div>
+                      </li>
+                      <% }; %>
+                  </ul>
+                  <%# / 制作実績 - コンテンツ %>
+
+                    <%# 制作実績 - サムネイル + スマホ時のテキスト情報 %>
+                      <div class="p-works__items">
+                        <% for(let work in jsonData.works){ %>
+                          <a id="<%= jsonData.works[work].id %>" href="<%= jsonData.works[work].slug %>"
+                            class="p-works__item p-works-item js-follow-targets">
+                            <picture class="p-works-item__picture">
+                              <source srcset="<%= jsonData.works[work].thumbnailWebp %>" class="p-works-item__img"
+                                type="image/webp" />
+                              <img src="<%= jsonData.works[work].thumbnailPng %>" class="p-works-item__img" width="770"
+                                height="781" alt="<%= jsonData.works[work].alt %>" loading="lazy" data-scroll
+                                data-scroll-speed="-1.1">
+                            </picture>
+                            <div class="p-works-item__body u-hidden-lax-up">
+                              <h3 class="p-works-item__title">
+                                <%= jsonData.works[work].name %>
+                              </h3>
+                              <p class="p-works-item__category">
+                                <%= jsonData.works[work].category %> / <%= jsonData.works[work].scope %>
+                              </p>
+                            </div>
+                          </a>
+                          <% }; %>
+                      </div>
+                      <%# / 制作実績 - サムネイル + スマホ時のテキスト情報 %>
+                        <div id="js-works-mask" class="p-works__mask"></div>
+              </div>
+            </section>
+            <%# / 制作実績 %>
+        </div>
+      </div>
+
+      <%# 次ページへの導線 %>
+        <a href="/contact/" class="p-contact-connect" style="transform: translate(0px, 0px);">
+          <p class="p-contact-connect__text-wrapper">
+            <span class="p-contact-connect__text" data-text="Contact Me">
+              Contact Me
+            </span>
+          </p>
+        </a>
+        <%# / 次ページへの導線 %>
+    </main>
+
+    <%- include('./common/_footer', {pageId:pageId }) %>

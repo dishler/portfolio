@@ -1,0 +1,379 @@
+<% let pageId='about' ; %>
+  <%- include('../common/_header', {pageId:pageId }) %>
+
+    <% console.log(jsonData) %>
+      <main class="l-lower-about" data-barba="container" data-barba-namespace="about">
+        <div class="l-container">
+          <%# ファーストビュー %>
+            <section id="js-first-view" class="p-lower-first-view p-lower-first-view--about">
+              <div class="p-lower-first-view__inner">
+                <div class="p-lower-first-view__heading c-page-heading">
+                  <h1 class="c-page-heading__en is-wrap" style="transform: translate(0px, 0px);">
+                    <span class="is-slide-up">
+                      ABOUT <span class="u-hidden-lax-up">ME</span>
+                    </span>
+                  </h1>
+                  <span class="c-page-heading__en is-wrap u-hidden-lax-down" style="transform: translate(0px, 0px);">
+                    <span class="is-slide-up u-delay01">
+                      ME
+                    </span>
+                  </span>
+                </div>
+                <div class="p-lower-first-view__intro p-intro">
+                  <p class="p-intro__heading--about">
+                    <span class="is-wrap" style="transform: translate(0px, 0px);">
+                      <span class="is-slide-up u-delay02">
+                        MY MISSION
+                      </span>
+                    </span>
+                  </p>
+                  <p class="p-intro__text js-slide-up-row">
+                    To create human centered,
+                    functional, business-effective
+                    solutions.
+                  </p>
+                </div>
+              </div>
+            </section>
+            <%# / ファーストビュー %>
+
+              <%# プロフィール %>
+                <section class="p-profile l-lower-about__profile">
+                  <h2 class="c-section-heading" style="transform: translate(0px, 0px);">
+                    <span class="c-section-heading__en">
+                      PROFILE
+                    </span>
+                  </h2>
+                  <div class="p-profile__contents">
+                    <div class="p-profile__column">
+                      <h3 class="p-profile__heading">
+                        <span class="p-profile__heading-en">
+                          Dmytro Ishler
+                        </span>
+                      </h3>
+                      <p class="p-profile__text">
+                        Ui/Ux designer with 2+ years of commercial experience, I’m focused on creating functional,
+                        business-effective solutions.
+                        I run projects from scratch, redesign existing projects, and long-term support -
+                        iterate/evaluate design solutions.
+                      </p>
+                      <div class="p-profile__details">
+                        <div data-scroll data-scroll-speed="-0.5">
+                          <span class="p-information__arrow u-hidden-lax-down">
+                            <svg class="p-information__arrow-svg" width="24px" height="24px" viewBox="0 0 14 14"
+                              version="1.1" xmlns="http://www.w3.org/2000/svg"
+                              xmlns:xlink="http://www.w3.org/1999/xlink">
+                              <title>arrow-up-right</title>
+                              <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="Artboard" transform="translate(-1019.000000, -279.000000)" stroke="#000"
+                                  stroke-width="1.5">
+                                  <g id="arrow-up-right"
+                                    transform="translate(1026.000000, 286.000000) rotate(90.000000) translate(-1026.000000, -286.000000) translate(1020.000000, 280.000000)">
+                                    <polyline id="Path" points="2.76923077 0 12 0 12 9.23076923"></polyline>
+                                    <line x1="12" y1="0" x2="0" y2="12" id="Path"></line>
+                                  </g>
+                                </g>
+                              </g>
+                            </svg>
+                          </span>
+                        </div>
+
+                        <div class="p-information__row">
+                          <h3 class="p-information__heading">
+                            LOCATION
+                          </h3>
+                          <ul class="p-information__list">
+                            <li class="p-information__item">
+                              <span class="p-information__text">
+                                Lviv, Ukraine
+                              </span>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="p-information__row">
+                          <h3 class="p-information__heading">
+                            EDUCATION
+                          </h3>
+                          <li class="p-information__item">
+                            <span class="p-information__text" style="font-weight: bold">
+                              Bachelor Degree in Journalism
+                            </span>
+                          </li>
+                          <li class="p-information__item">
+                            <span class="p-information__text">
+                              National University Lviv Polytechnic
+                            </span>
+                          </li>
+
+                        </div>
+                        <div class="p-information__row">
+                          <h3 class="p-information__heading">
+                            COURSES
+                          </h3>
+                          <li class="p-information__item">
+                            <span class="p-information__text" style="font-weight: bold">
+                              UI/UX DESIGN
+                            </span>
+                          </li>
+                          <li class="p-information__item">
+                            <span class="p-information__text">
+                              Projector — Creative & Tech Online Institute University </span>
+                          </li>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="p-profile__img-wrapper">
+                      <picture class="p-profile__picture">
+                        <source srcset="../../img/webp/profile02.svg" class="p-profile__img" type="image/svg" />
+                        <img src="../../img/common/profile02.jpg" class="p-profile__img" width="520" height="662"
+                          loading="lazy" alt="プロフィールの顔写真" data-scroll data-scroll-speed="-1">
+                      </picture>
+                    </div>
+                  </div>
+                </section>
+                <%# / プロフィール %>
+
+                  <%# 使用技術 %>
+                    <section class="p-experience l-lower-about__experience">
+                      <h2 class="c-section-heading" style="transform: translate(0px, 0px);">
+                        <span class="c-section-heading__en">
+                          MAIN EXPERIENCE
+                        </span>
+                      </h2>
+                      <div class="p-experience__contents js-trigger">
+                        <ul class="p-experience__list">
+                          <li class="p-experience__item  is-fade-up">
+                            <h3 class="p-experience__heading heading-one">
+                              Lasoft
+                            </h3>
+                            <p class="p-experience__subtitle">Ui/Ux designer <br />
+                              Apr 2021 - Present | Lviv, Ukraine </p>
+                            <p class="p-experience__text">
+                              At LaSoft my main responsibility was to define the vision and mission of the product,
+                              propose and provide the most
+                              suitable solution, in which client will be happy to receive what he needs, users
+                              (customers) will get the most positive
+                              user experience and developers will have all information they need to deliver the project
+                              without any delays.
+                              Usually, my working process is based on communication with the client (via
+                              mail/Slack/InVision) first to define the
+                              problem and then to provide and verify visual solutions on screens or clickable animated
+                              prototypes. Of course, the
+                              communication varies depending on needs, client geolocation, etc.
+                            </p>
+                          </li>
+                          <li class="p-experience__item  is-fade-up u-delay01">
+                            <h3 class="p-experience__resp">
+                              RESPONSIBILITIES
+                            </h3>
+                            <ul class="p-experience__text p-experience__resp_list">
+                              <li class="p-experience__resp-item">Creating Web Interfaces</li>
+                              <li class="p-experience__resp-item">Mobile Interfaces</li>
+                              <li class="p-experience__resp-item">Responsive Design</li>
+                              <li class="p-experience__resp-item">Wireframing</li>
+                              <li class="p-experience__resp-item">Prototyping</li>
+                              <li class="p-experience__resp-item">Information architecture</li>
+                              <li class="p-experience__resp-item">User Flows</li>
+                              <li class="p-experience__resp-item">Design system</li>
+                              <li class="p-experience__resp-item">Usability testing</li>
+                              <li class="p-experience__resp-item">User Personas</li>
+                              <li class="p-experience__resp-item">User Stories</li>
+                              <li class="p-experience__resp-item">Presentations Design</li>
+                              <li class="p-experience__resp-item">Graphic Design</li>
+                              <li class="p-experience__resp-item">Data Visualisation</li>
+                            </ul>
+                          </li>
+                          <li class="p-experience__item  is-fade-up u-delay02">
+
+                            <h3 class="p-experience__heading heading-two">
+                              Innovation for Business
+                            </h3>
+                            <p class="p-experience__subtitle">Ui/Ux designer <br />
+                              Dec 2020 - Mar 2021 | Kyiv, Ukraine</p>
+                            <p class="p-experience__text">
+                              My role in this product company included all stages of design thinking process -
+                              emphasize, define, ideate, prototype,
+                              and test. I was working on stakeholder interviews, analyzing competitors, conducting a
+                              Customer Journey Map, creating
+                              and testing wireframes with users, building information architecture, creating a style
+                              guide, and mood board.
+
+                            </p>
+                          </li>
+                          <li class="p-experience__item  is-fade-up u-delay03">
+                            <h3 class="p-experience__resp">
+                              RESPONSIBILITIES
+                            </h3>
+                            <ul class="p-experience__text p-experience__text_list">
+                              <li class="p-experience__resp-item">Creating Web Interfaces</li>
+                              <li class="p-experience__resp-item">Mobile adaptation</li>
+                              <li class="p-experience__resp-item">Presentations Design</li>
+                              <li class="p-experience__resp-item">Logos</li>
+                              <li class="p-experience__resp-item">Interactive Prototypes</li>
+                              <li class="p-experience__resp-item">Animation</li>
+                              <li class="p-experience__resp-item">User Flows</li>
+                              <li class="p-experience__resp-item">Information Architecture</li>
+                              <li class="p-experience__resp-item">Wireframing</li>
+                              <li class="p-experience__resp-item">Design system</li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+                    </section>
+                    <%# / 使用技術 %>
+                      <section class="p-skillset l-lower-about__skillset">
+                        <h2 class="c-section-heading" style="transform: translate(0px, 0px);">
+                          <span class="c-section-heading__en">
+                            SLILLSET
+                          </span>
+                        </h2>
+                        <div class="p-skillset__contents js-trigger">
+                          <div class="p-skillset__">
+                            <ul class="p-skillset__list">
+                              <li class="p-skillset__item"> Competitors Analysis</li>
+                              <li class="p-skillset__item"> Design systems</li>
+                              <li class="p-skillset__item"> Usability Testing</li>
+                              <li class="p-skillset__item"> User Interviews</li>
+                              <li class="p-skillset__item"> Wireframes</li>
+                              <li class="p-skillset__item"> Accessibility</li>
+                              <li class="p-skillset__item"> UI Design</li>
+                              <li class="p-skillset__item"> Stakeholder Interviews</li>
+                              <li class="p-skillset__item"> Graphic Design</li>
+                              <li class="p-skillset__item"> Prototypes</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </section>
+                      <%# バリュー %>
+                        <section class="p-value l-lower-about__value">
+                          <h2 class="c-section-heading" style="transform: translate(0px, 0px);">
+                            <span class="c-section-heading__en">
+                              WORK PROCESS
+                            </span>
+                          </h2>
+                          <div class="p-value__contents js-trigger">
+                            <div class="p-value__circle">
+                              <div class="p-value__circle-inner">
+                                <svg class="p-value__circle-svg01" id="circle-1" xmlns="http://www.w3.org/2000/svg"
+                                  x="0px" y="0px" width="381px" height="381px" viewBox="0 0 381 381">
+                                  <path class="p-value__circle-pass" d="M376.0118,190.5c0,102.4553-83.0565,185.5118-185.5118,185.5118S4.9882,292.9554,4.9882,190.5
+                        S88.0447,4.9882,190.5,4.9882S376.0118,88.0447,376.0118,190.5"></path>
+                                </svg>
+                                <span class="p-value__circle-text p-value__circle-text--1">Briefing</span>
+                              </div>
+                              <div class="p-value__circle-column">
+                                <div class="p-value__circle-inner">
+                                  <svg class="p-value__circle-svg02" id="circle-2" xmlns="http://www.w3.org/2000/svg"
+                                    x="0px" y="0px" width="381px" height="381px" viewBox="0 0 381 381">
+                                    <path class="p-value__circle-pass" d="M376.0118,190.5c0,102.4553-83.0565,185.5118-185.5118,185.5118S4.9882,292.9554,4.9882,190.5
+                          S88.0447,4.9882,190.5,4.9882S376.0118,88.0447,376.0118,190.5"></path>
+                                  </svg>
+                                  <span class="p-value__circle-text p-value__circle-text--2">Research</span>
+                                </div>
+                                <div class="p-value__circle-inner">
+                                  <svg class="p-value__circle-svg03" id="circle-3" xmlns="http://www.w3.org/2000/svg"
+                                    x="0px" y="0px" width="381px" height="381px" viewBox="0 0 381 381">
+                                    <path class="p-value__circle-pass" d="M376.0118,190.5c0,102.4553-83.0565,185.5118-185.5118,185.5118S4.9882,292.9554,4.9882,190.5
+                          S88.0447,4.9882,190.5,4.9882S376.0118,88.0447,376.0118,190.5"></path>
+                                  </svg>
+                                  <span class="p-value__circle-text p-value__circle-text--3">Prototyping</span>
+                                </div>
+                                <div class="p-value__circle-inner">
+                                  <svg class="p-value__circle-svg04" id="circle-4" xmlns="http://www.w3.org/2000/svg"
+                                    x="0px" y="0px" width="381px" height="381px" viewBox="0 0 381 381">
+                                    <path class="p-value__circle-pass" d="M376.0118,190.5c0,102.4553-83.0565,185.5118-185.5118,185.5118S4.9882,292.9554,4.9882,190.5
+                                                        S88.0447,4.9882,190.5,4.9882S376.0118,88.0447,376.0118,190.5">
+                                    </path>
+                                  </svg>
+                                  <span class="p-value__circle-text p-value__circle-text--4">Concept</span>
+                                </div>
+                                <div class="p-value__circle-inner">
+                                  <svg class="p-value__circle-svg05" id="circle-5" xmlns="http://www.w3.org/2000/svg"
+                                    x="0px" y="0px" width="381px" height="381px" viewBox="0 0 381 381">
+                                    <path class="p-value__circle-pass" d="M376.0118,190.5c0,102.4553-83.0565,185.5118-185.5118,185.5118S4.9882,292.9554,4.9882,190.5
+                                                        S88.0447,4.9882,190.5,4.9882S376.0118,88.0447,376.0118,190.5">
+                                    </path>
+                                  </svg>
+                                  <span class="p-value__circle-text p-value__circle-text--5">Transfer</span>
+                                </div>
+                              </div>
+                            </div>
+                            <ul class="p-value__list">
+                              <li class="p-value__item is-fade-up u-delay09">
+                                <div class="p-value__item-body">
+                                  <h3 class="p-value__item-heading">
+                                    Briefing
+                                  </h3>
+                                  <p class="p-value__item-text">
+                                    At this stage I think over the structure of the site and the functionality of each
+                                    page separately, based on the
+                                    findings of the previous research
+                                  </p>
+                                </div>
+                              </li>
+                              <li class="p-value__item is-fade-up u-delay010">
+                                <div class="p-value__item-body">
+                                  <h3 class="p-value__item-heading">
+                                    Research
+                                  </h3>
+                                  <p class="p-value__item-text">
+                                    I conduct a selection of references, compose a mood board based on your preferences
+                                    and the results of visual analysis
+                                    of competitors, create a design concept for all pages and blocks in Figma
+                                  </p>
+                                </div>
+                              </li>
+                              <li class="p-value__item is-fade-up u-delay011">
+                                <div class="p-value__item-body">
+                                  <h3 class="p-value__item-heading">
+                                    Prototyping
+                                  </h3>
+                                  <p class="p-value__item-text">
+                                    We discuss the goals and objectives of your project, and ways to achieve them. The
+                                    result of the briefing is the
+                                    specification which describes the timing, cost, scope of work, and criteria
+                                  </p>
+                                </div>
+                              </li>
+                              <li class="p-value__item is-fade-up u-delay09">
+                                <div class="p-value__item-body">
+                                  <h3 class="p-value__item-heading">
+                                    Concept
+                                  </h3>
+                                  <p class="p-value__item-text">
+                                    I analyze the competitive environment and market of your product, conduct a visual
+                                    analysis of the direction of your
+                                    business, and find dependencies and patterns used in the design.
+                                  </p>
+                                </div>
+                              </li>
+                              <li class="p-value__item is-fade-up u-delay09">
+                                <div class="p-value__item-body">
+                                  <h3 class="p-value__item-heading">
+                                    File Transfer
+                                  </h3>
+                                  <p class="p-value__item-text">
+                                    I prepare a Figma file with a fully developed project, including adaptive versions
+                                    for transferring to your developer
+                                  </p>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                        </section>
+                        <%# / バリュー %>
+        </div>
+
+        <%# お問い合わせ導線 %>
+          <a href="/contact/" class="p-contact-connect" style="transform: translate(0px, 0px);">
+            <p class="p-contact-connect__text-wrapper">
+              <span class="p-contact-connect__text" data-text="Contact Me">
+                Contact Me
+              </span>
+            </p>
+          </a>
+          <%# / お問い合わせ導線 %>
+      </main>
+
+      <%- include('../common/_footer', {pageId:pageId }) %>

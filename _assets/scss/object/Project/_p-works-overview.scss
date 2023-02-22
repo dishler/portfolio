@@ -1,0 +1,407 @@
+@use "foundation/global";
+
+// Project 制作実績概要
+//--------------------------------------------------------------------------
+
+.p-works-overview__heading {
+  position: relative;
+  border-top: 1px solid;
+  border-color: global.$color-primary;
+  padding-top: 18px;
+  font-size: 24px;
+  @include global.lh(1);
+  letter-spacing: -0.01em;
+  font-weight: 500;
+  transition: border-color 0.4s ease-in-out;
+
+  @include global.mq(md) {
+    padding-top: 24px;
+    font-size: max(32px, #{global.vw(40)});
+    font-weight: 400;
+  }
+}
+
+.p-works-overview__body {
+  margin-top: 24px;
+
+  @include global.mq(md) {
+    margin-top: 32px;
+  }
+}
+
+.p-works-overview__row {
+  font-family: global.$font-family-en;
+  @include global.mq(md) {
+    display: flex;
+    align-items: baseline;
+  }
+
+  &:not(:first-child) {
+    margin-top: 18px;
+
+    @include global.mq(md) {
+      margin-top: 14px;
+    }
+  }
+}
+
+.p-works-overview__dt {
+  position: relative;
+  @include global.fz(16);
+  @include global.lh(1.2);
+  font-weight: 500;
+  font-family: global.$font-family-en;
+
+  @include global.mq(md) {
+    max-width: 80px;
+    width: 100%;
+    max-width: 100px;
+  }
+}
+
+.p-works-overview__dd {
+  margin-top: 3px;
+  @include global.fz(12, 16);
+  @include global.lh(2);
+  font-family: global.$font-family-en;
+
+  @include global.mq(md) {
+    margin-top: 0;
+    padding-left: 14px;
+  }
+}
+
+.p-works-overview__link {
+  position: relative;
+  display: inline-block;
+  transition: color 0.4s ease-in-out;
+  background: linear-gradient(transparent 0, global.$color-primary 40%) no-repeat;
+  background-position: bottom right;
+  background-size: 0 1px;
+  @include global.lh(1.7);
+  transition: background-size 0.6s global.ease(out-quint);
+
+  &:hover,
+  &:focus {
+    background-position: bottom left;
+    background-size: 100% 1px;
+  }
+}
+
+.p-works-overview__blank {
+  width: 12px;
+  height: 12px;
+  transform: translateY(15%);
+
+  @include global.mq(md) {
+    width: 14px;
+    height: 14px;
+    transform: translateY(9%);
+  }
+}
+
+.p-works-overview__text {
+  @include global.fz(12, 16);
+  @include global.lh(1.7);
+  font-weight: 300;
+}
+
+
+
+
+
+
+
+.p-work-owerview__sidebar-menu, .sidebar {
+  position: sticky;
+  display: flex;
+  flex-direction: column;
+  margin-right: 0px;
+  width: auto;
+  width: 25%;
+  top: 0;
+  height: 100%;
+  overflow: auto;
+  
+}
+
+.p-work-owerview__nav ,  .content{
+  display: flex;
+  flex-direction: column;
+    gap: 16px;
+    
+}
+
+
+.p-work-owerview__nav-item .nav-icon {
+  margin-right: 12px;
+  width: 24px;
+  height: 24px;
+}
+
+.p-work-owerview__nav-item {
+  color: global.$color-menu-icon;
+  padding: 8px 0;
+  font-size: 18px;
+ 
+  // width: 100%;
+
+  &:hover,
+  &:focus,
+  &:active {
+      color: global.$color-primary;
+      .nav-icon {
+      fill: global.$color-primary;
+      }
+    }
+}
+
+.p--current {
+  color: global.$color-primary;
+  .nav-icon {
+      fill: global.$color-primary;
+    }
+}
+
+.p-overview__nav-sections {
+  width: 72%;
+}
+
+.p-work-overview__container {
+  margin-bottom: 120px;
+  max-width: 90%;
+
+}
+
+
+.p-work-overview__title {
+  font-family: global.$font-family-works;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38.4px;
+  margin-bottom: 16px;
+}
+
+.p-work-overview--occ {
+  color: global.$color-occ;
+}
+
+#the-solution>div>img {
+  position: relative;
+  left: 160px;
+}
+
+#my-role>div>div>ul {
+  margin-left: 24px ;
+}
+#my-role>div>div>ul>li {
+  list-style:disc;
+
+}
+
+.p-work-overview--amity {
+color: global.$color-amity;
+}
+
+.p-work-overview--kamsa {
+color: global.$color-kamsa;
+}
+
+.p-work-overview--protogetic {
+color: global.$color-protogetic;
+}
+
+
+.p-work-overview__personas--img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  .img-1 {
+    margin-bottom: 300px;
+  }
+
+  .img-2{
+  display: block;
+  position: absolute;
+  top: 232px;
+  left: 88px;
+}
+
+
+}
+
+.p-owerview__visual-occ--img {
+  margin-bottom: -300px;
+  
+  .img-8_1 {
+    width: 50%;
+
+  }
+
+  .img-8_2 {
+    position: relative;
+    bottom: 400px;
+      left: 230px;
+      width: 70%;
+}
+
+
+
+
+
+}
+
+
+.img-04 {
+  margin-top: 40px;
+}
+.p-owerview__visual-kamsa--img {
+position: relative;
+width: 70%;
+margin-top: 8vw;
+ margin-bottom: 38vw;
+
+     .img-08_1 {
+
+position: absolute;
+   top: -100px;
+     }
+  
+     .img-08_2 {
+      position: absolute;
+        left: 420px;
+     }
+}
+
+ .img-05 {
+   position: relative;
+   left: 13vw;
+   width: 80%;
+ }
+
+
+.p-owerview__visual-protogetic--img {
+  position: relative;
+  margin-bottom: 240px;
+
+  img {
+    width: 70%;
+  }
+  .img-05_2 {
+    position: absolute;
+    top: 60px;
+    right: 0px;
+  }
+
+  .img-05_3 {
+    position: absolute;
+        width: 50%;
+          top: 140px;
+          right: -40px;
+        
+  }
+}
+.p-work-overview__app--tabs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.p-work-overview__description {
+  margin-bottom: 16px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 160%;
+  font-family: global.$font-family-en;
+
+  
+  
+}
+
+.p-work-overview__description--protogetic{
+  li {
+      list-style-type: disc;
+      margin-left: 24px;
+    }
+}
+
+.tabs__item--description {
+  width: 24em;
+  margin-top: 18px;
+}
+
+
+
+.tabs__btn {
+  color: global.$color-hat;
+}
+
+.tabs__btn:hover {
+  color: global.$color-primary;
+}
+
+.tab-content-active {
+  color: global.$color-primary;
+}
+
+
+
+.tab-content {
+  display: none;
+}
+
+.tab-content-active {
+  display: block;
+}
+
+
+.tab-content__item {
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+}
+
+
+.p-work-overview__app--item button {
+  font-family: global.$font-family-works;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  .btn-reset {
+      font-size: 72px;
+    }
+
+  .btn-reset--2 {
+      font-size: 52px
+    }
+
+}
+
+
+.p-work-overview__hat {
+  color: global.$color-hat;
+  margin-bottom: 4px;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.tabs__item--description {
+  font-family: global.$font-family-en;
+  margin-top: 16px; 
+}
+
+
+    .p-works-overview__link {
+      color: global.$color-primary;
+  
+      &::before {
+        background-color: global.$color-primary;
+      }
+    }
+  
+    .p-works-overview__heading {
+      &::after {
+        background-color: global.$color-primary;
+      }
+    }

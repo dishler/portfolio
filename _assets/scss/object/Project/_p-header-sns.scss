@@ -1,0 +1,34 @@
+@use "foundation/global";
+
+// Project ヘッダーSNS
+//--------------------------------------------------------------------------
+
+.p-header-sns {
+  display: flex;
+  align-items: center;
+  border-left: 1px solid global.$color-primary;
+
+  @include global.mq(lax) {
+    border-left: 1px solid global.$color-primary;
+  }
+}
+
+.p-header-sns__item {
+  height: 100%;
+  padding-left: 18px;
+}
+
+.p-header-sns__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 100%;
+}
+
+// ヘッダーの乗算が外れている時
+.is-blend-normal {
+  .p-header-sns {
+    border-left: 1px solid global.$color-primary;
+  }
+}

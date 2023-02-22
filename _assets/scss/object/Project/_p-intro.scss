@@ -1,0 +1,41 @@
+@use "foundation/global";
+
+// Project イントロ
+//--------------------------------------------------------------------------
+
+.p-intro__heading {
+  font-size: max(33px, 5.5vw);
+  @include global.lh(1.2, 1.05);
+  font-weight: 400;
+  margin-left: -1%;
+  letter-spacing: -0.01em;
+
+  @include global.mq(lax) {
+    margin-top: 0;
+    white-space: nowrap;
+    font-size: max(40px, #{global.vw(90)});
+  }
+}
+
+.p-intro__heading--contact {
+  font-size: max(37px, 5.5vw);
+  span {
+    &:not(:first-child) {
+      @include global.lh(1.24);
+    }
+  }
+}
+
+.p-intro__heading--about {
+  font-weight: 400;
+  font-size: 16px;
+  color: #909090;
+}
+
+.p-intro__text {
+  width: 100%;
+  margin-top: 10px;
+  @include global.fz(32, 48);
+  font-weight: 400;
+  font-family: global.$font-family-en;
+}

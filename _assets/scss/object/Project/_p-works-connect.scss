@@ -1,0 +1,122 @@
+@use "foundation/global";
+
+// Project 制作実績ページ next prev 導線
+//--------------------------------------------------------------------------
+
+.p-works-connect {
+  display: flex;
+  flex-direction: column;
+
+  @include global.mq(md) {
+    flex-direction: row;
+  }
+}
+
+.p-works-connect__link {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 80%;
+  background-color: global.$color-primary-dark;
+
+  @include global.mq(md) {
+    width: 100%;
+    padding-top: 50%;
+  }
+
+  &:nth-child(2) {
+    background-color: global.$color-primary;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(global.$color-primary, 0.35);
+  }
+
+  &:hover,
+  &:focus {
+    .p-works-connect__bg {
+      opacity: 1;
+      transform: scale(1.1, 1.1);
+    }
+
+    .p-works-connect__text-wrapper::before {
+      transform: scale(1, 1);
+      transform-origin: left top;
+    }
+
+    .p-works-connect__text {
+      transform: translateY(-1.2em);
+    }
+  }
+}
+
+.p-works-connect__bg {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  @include global.object-fit(cover, center);
+  transition: 
+  opacity 0.6s global.ease(out-quint), 
+  transform 2s global.ease(out-quint);
+}
+
+.p-works-connect__text-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: inline-block;
+  overflow: hidden;
+  z-index: 2;
+  color: global.$color-base;
+  font-size: max(42px, #{global.vw(100)});
+  @include global.lh(1.2);
+  font-weight: 400;
+  text-align: center;
+
+  @include global.mq(lax) {
+    height: 1.2em;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background-color: global.$color-base;
+    transform: scale(0, 1);
+    transform-origin: right top;
+    transition: transform 0.6s global.ease(out-quint);
+  }
+}
+
+.p-works-connect__text {
+  position: relative;
+  display: block;
+  @include global.fz(14);
+  @include global.lh(1);
+  transition: transform 0.6s global.ease(out-quint);
+
+  @include global.mq(lax) {
+    font-size: max(42px, #{global.vw(100)});
+    @include global.lh(1.2);
+  }
+
+  &::after {
+    content: attr(data-text);
+    display: block;
+    font-size: max(28px, #{global.vw(100)});
+    @include global.lh(1.2);
+    letter-spacing: -0.01em;
+    white-space: nowrap;
+  }
+}

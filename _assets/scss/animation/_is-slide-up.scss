@@ -1,0 +1,24 @@
+@use "foundation/global";
+
+// Animation スライドアップ
+//--------------------------------------------------------------------------
+
+//ラッパースタイル（親要素）
+.is-wrap {
+  display: block;
+  overflow: hidden;
+}
+
+//子要素
+.is-slide-up {
+  display: inline-block;
+  transform: translateY(120%);
+  transition: transform 1.7s global.ease(out-expo);
+}
+
+//トリガー発火後
+.is-inview {
+  .is-slide-up {
+    transform: translateY(0);
+  }
+}

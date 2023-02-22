@@ -1,0 +1,220 @@
+@use "foundation/global";
+
+// Project 使用技術
+//--------------------------------------------------------------------------
+
+
+.p-experience {
+  position: relative;
+  padding-left: 20px;
+
+  @include global.mq(xl) {
+    padding-left: 0;
+  }
+
+ 
+}
+
+       
+      
+
+
+.p-experience__contents {
+  width: 100%;
+  margin-top: 52px;
+
+  @include global.mq(md) {
+    margin-top: 84px;
+  }
+
+  @include global.mq(xl) {
+    width: 76vw;
+    margin-left: auto;
+  }
+
+  @include global.mq(1920px, min) {
+    width: 71.5vw;
+  }
+}
+
+.p-experience__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 52px;
+
+  @include global.mq(md) {
+    row-gap: 80px;
+  }
+}
+
+.p-experience__item {
+  @include global.mq(md) {
+    width: calc(50% - 10% / 2);
+  }
+}
+
+.p-experience__number {
+  @include global.fz(12, 14);
+  @include global.lh(1);
+  color: rgba(global.$color-primary, 0.5);
+}
+
+.p-experience__heading {
+  position: relative;
+  font-size: 24px;
+
+
+  @include global.lh(1);
+  letter-spacing: -0.01em;
+  font-weight: 400;
+  margin-top: 2px;
+
+  @include global.mq(md) {
+    margin-top: 4px;
+    font-size: max(28px, #{global.vw(42)});
+  }
+
+
+}
+
+.p-experience__heading::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: global.$color-point;
+  left: -50px;
+  top: 5px;
+}
+  .heading-one::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: auto;
+      height: calc(42vw - 10%);
+      background-color: global.$color-point;
+
+      
+  
+      @include global.mq(xl) {
+        top: 10px;
+        left: -41px;
+        width: 1px;
+      }
+  
+      @include global.mq(1920px, min) {
+        width: 1px;
+      }
+
+      
+    }
+
+        .heading-two::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: auto;
+          height: calc(20vw - 16px);
+          background-color: global.$color-point;
+    
+    
+          @include global.mq(xl) {
+            top: 10px;
+            left: -41px;
+            width: 1px;
+            
+          }
+    
+          @include global.mq(1920px, min) {
+            width: 1px;
+          }
+    
+    
+        }
+
+
+
+// .p-experience__heading::after {
+//   content: "";
+//   position: absolute;
+//   top: 0;
+//   left: auto;
+//   height: 100%;
+//   width: 1px;
+//   background-color: global.$color-primary;
+//   opacity: 0.5;
+
+//   @include global.mq(xl) {
+//     top: 0;
+//     left: 0;
+//     right: 35%;
+//     width: calc(65vw);
+//   }
+
+//   @include global.mq(1920px, min) {
+//     width: 68vw;
+//   }
+// }
+
+.p-experience__subtitle {
+
+  display: inline-block;
+  @include global.fz(12, 16);
+  @include global.lh(1.6);
+  padding: 2px 0;
+}
+
+.p-experience__text {
+  margin-top: 12px;
+  @include global.fz(12, 16);
+  line-height: 1.85em;
+  text-align: justify;
+  font-family: global.$font-family-en;
+
+  @include global.mq(md) {
+    margin-top: 24px;
+  }
+
+  @include global.mq(lax) {
+    line-height: 1.8em;
+  }
+}
+
+.p-experience__resp {
+  display: inline-block;
+  @include global.fz(14, 18);
+  @include global.lh(1.6);
+  padding-top: 2px;
+}
+
+.p-experience__resp-list {
+  margin-top: 12px;
+    @include global.fz(12, 16);
+    line-height: 1.85em;
+    text-align: justify;
+    font-family: global.$font-family-en;
+  
+    @include global.mq(md) {
+      margin-top: 12px;
+    }
+  
+    @include global.mq(lax) {
+      line-height: 1.8em;
+    }
+}
+
+
+ .p-experience__resp-item {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.p-experience__svg {
+  display: block;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}

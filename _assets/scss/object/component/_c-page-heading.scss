@@ -1,0 +1,35 @@
+@use "foundation/global";
+
+// Component 下層ページ見出し
+//--------------------------------------------------------------------------
+
+.c-page-heading__en {
+  font-size: max(48px, 8vw);
+  @include global.lh(1);
+  font-weight: 400;
+  white-space: nowrap;
+  letter-spacing: -0.01em;
+  
+  @include global.mq(md) {
+    &:not(:first-child) {
+      padding-left: 18vw;
+    }
+  }
+
+  @include global.mq(lax) {
+    font-size: max(60px, #{global.vw(133)});
+  }
+}
+
+.c-page-heading__ja {
+  margin-top: 10px;
+  color: global.$color-primary;
+  @include global.fz(14, 16);
+  @include global.lh(1);
+  font-weight: 400;
+  font-family: global.$font-family-en;
+
+  @include global.mq(md) {
+    margin-top: 12px;
+  }
+}

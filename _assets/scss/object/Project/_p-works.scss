@@ -1,0 +1,77 @@
+@use "foundation/global";
+
+// Project トップページ制作実績
+//--------------------------------------------------------------------------
+
+.p-works__inner {
+  position: relative;
+}
+
+.p-works__contents {
+  width: 100%;
+  counter-reset: number 0;
+
+  @include global.mq(lax) {
+    height: 50vh;
+    position: relative;
+    width: 45%;
+  }
+}
+
+.p-works__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.p-works__items {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 84px;
+
+  @include global.mq(md) {
+    row-gap: 134px;
+  }
+
+  @include global.mq(lax) {
+    display: block;
+    width: 52%;
+    margin-left: auto;
+  }
+
+  @include global.mq(xl) {
+    width: 48.5%;
+  }
+}
+
+.p-works__item {
+  width: 100%;
+
+  @include global.mq(md) {
+    width: calc(50% - 5% / 2);
+  }
+
+  @include global.mq(lax) {
+    width: 100% !important;
+
+    &:not(:first-child) {
+      padding-top: 17vh;
+    }
+
+    &:not(:last-child) {
+      padding-bottom: 17vh;
+    }
+  }
+}
+
+.p-works__mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100% - global.vw(160));
+  background-color: transparent;
+  pointer-events: none;
+}

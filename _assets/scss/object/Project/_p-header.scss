@@ -1,0 +1,151 @@
+@use "../../foundation/global";
+
+
+// Project ヘッダー
+//--------------------------------------------------------------------------
+
+.p-header {
+  background-color: transparent;
+  color: global.$color-primary;
+  mix-blend-mode: normal;
+
+  @include global.mq(lax) {
+    mix-blend-mode: normal;
+    color: global.$color-primary;
+  }
+}
+
+.p-header__inner {
+  position: relative;
+  z-index: map-get(global.$layer, header-inner);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: calc(100% - 48px);
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  height: 53px;
+
+  @include global.mq(md) {
+    width: 100%;
+    height: auto;
+    padding: 40px 0 24px;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    opacity: 0.6;
+    background-color: global.$color-primary;
+
+    @include global.mq(lax) {
+      height: 2px;
+      background-color: global.$color-primary;
+    }
+  }
+
+  &::before {
+    content: "";
+    transform: scale(0, 1) translateX(-80%);
+    transform-origin: left top;
+  }
+
+  &::after {
+    content: "";
+    transform: scale(1, 1);
+    transform-origin: right top;
+  }
+}
+
+.p-header__logo-link {
+  display: flex;
+  overflow: hidden;
+  @include global.fz(16, 20);
+  @include global.lh(1.2);
+  font-weight: 400;
+  height: 1.2em;
+  letter-spacing: -0.01em;
+
+  &:hover,
+  &:focus {
+    .p-header__logo-head,
+    .p-header__logo-foot {
+      transform: translateY(-1.2em);
+    }
+  }
+}
+
+.p-header__logo-text {
+  font-weight: 500;
+  @include global.lh(1.2);
+}
+
+.p-header__logo-change {
+  display: inline-block;
+  margin-left: 0.25em;
+}
+
+.p-header__logo-head,
+.p-header__logo-foot {
+  display: block;
+  transition: transform 0.6s global.ease(out-quint);
+}
+
+.p-header__contents {
+  display: flex;
+}
+
+.p-header__sns {
+  height: 100%;
+  margin-left: 28px;
+}
+
+.p-header__button {
+  transform: translateX(5px);
+}
+
+//乗算を外す
+.p-header.is-blend-normal {
+  @include global.mq(lax) {
+    color: global.$color-primary;
+    .p-header__inner {
+      &::after,
+      &::before {
+        background-color: global.$color-primary;
+      }
+    }
+  }
+}
+
+// borderアニメーション時
+.p-header.is-slide-border {
+  .p-header__inner {
+    &::before {
+      transform-origin: left top;
+      transition: transform 1s global.ease(out-quint);
+      transform: scale(1, 1) translateX(0);
+    }
+
+    &::after {
+      transition: transform 1s global.ease(out-quint);
+      transform-origin: right top;
+      transform: scale(0, 1);
+    }
+  }
+}
+
+//ドロワーアクティブ時
+.is-drawer-active {
+  .p-header.is-blend-normal {
+    mix-blend-mode: normal;
+    .p-header__logo-link {
+      color: global.$color-primary;
+    }
+  }
+}

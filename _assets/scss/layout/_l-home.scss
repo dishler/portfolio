@@ -1,0 +1,43 @@
+@use "foundation/global";
+
+// Layout トップページ
+//--------------------------------------------------------------------------
+
+//ファーストビュー
+.l-home__first-view {
+  padding: 15vh 0 10vh;
+
+  @include global.mq(lax) {
+    min-height: 500px;
+    height: 61vw;
+    max-height: 86vh;
+    padding: 0;
+  }
+}
+
+.l-home__contents {
+  display: flex;
+  flex-direction: column-reverse;
+
+  @include global.mq(lax) {
+    display: block;
+  }
+}
+
+//プロフィール
+.l-home__about {
+  padding-bottom: 84px;
+
+  @include global.mq(lax) {
+    padding-bottom: 0;
+  }
+}
+
+// 制作実績
+.l-home__works {
+  padding-bottom: 120px;
+
+  @include global.mq(lax) {
+    padding-bottom: 260px;
+  }
+}

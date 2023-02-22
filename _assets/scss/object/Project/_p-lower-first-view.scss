@@ -1,0 +1,50 @@
+@use "foundation/global";
+
+// Project 下層ページ ファーストビュー
+//--------------------------------------------------------------------------
+
+.p-lower-first-view {
+  width: 100%;
+  padding: 23vh 0 15vh;
+
+  @include global.mq(lax) {
+    padding: 20vw 0 10vw;
+  }
+
+  @include global.mq(xxl) {
+    padding: 15vw 0 8.6vw;
+  }
+}
+
+.p-lower-first-view__inner {
+  width: 100%;
+
+  @include global.mq(lax) {
+    display: flex;
+  }
+}
+
+.p-lower-first-view__heading {
+  @include global.mq(lax) {
+    width: calc(40% - 8% / 2);
+  }
+}
+
+.p-lower-first-view__intro {
+  margin-top: 52px;
+
+  @include global.mq(lax) {
+    width: calc(55% - 8% / 2);
+    margin-top: global.vw(174);
+    margin-left: 8%;
+  }
+}
+
+
+.p-lower-first-view--contact {
+  .p-lower-first-view__intro {
+    @include global.mq(lax) {
+      margin-top: global.vw(164);
+    }
+  }
+}

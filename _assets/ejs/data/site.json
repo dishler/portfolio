@@ -1,0 +1,102 @@
+{
+  "siteInfo": {
+    "name": "Dmytro Ishler Portfolio",
+    "siteUrl": "https://dariia-zhukovska.github.io"
+  },
+  "//ページ": "",
+  "pages": {
+    "home": {
+      "name": "Dmytro Ishler Portfolio",
+      "description": "",
+      "type": "website",
+      "slug": "/"
+    },
+    "about": {
+      "name": "ABOUT",
+      "description": "ABOUT",
+      "type": "article",
+      "slug": "/about/"
+    },
+    "occ": {
+      "name": "One Click Code",
+      "description": "OCC is a roofing code report software that helps professionals access accurate, up-to-date codes, saving time and reducing costs. It minimizes frustration and tension related to finding reliable roofing codes.",
+      "type": "article",
+      "slug": "/occ/"
+    },
+    "amity": {
+      "name": "Amity",
+      "description": "Amity is B2B platform whose main purpose is to remote control the stoves at living facilities.",
+      "type": "article",
+      "slug": "/amity/"
+    },
+    "kamsa": {
+      "name": "Kamsa",
+      "description": "Kamsa is a compensation management program providing real-time global salary data and expert support to make compensation review and benchmarking painless.",
+      "type": "article",
+      "slug": "/kamsa/"
+    },
+    "protogetic": {
+      "name": "Protogetic",
+      "description": "The Protogetic is a portal for vendors and buyers of physical security products. It serves as a central hub for professionals in the security building and infrastructure construction industries to find and access a wide range of products.",
+      "type": "article",
+      "slug": "/protogetic/"
+    },
+    "contact": {
+      "name": "CONTACT",
+      "description": "CONTACT",
+      "type": "article",
+      "slug": "/contact/"
+    }
+  },
+  "//制作実績": "",
+  "works": {
+    "occ": {
+      "dataId": "#js-occ",
+      "id": "js-occ",
+      "name": "OCC",
+      "category": "Landing Page",
+      "description": "OCC is a roofing code report software that helps professionals access accurate, up-to-date codes, saving time and reducing costs. It minimizes frustration and tension related to finding reliable roofing codes.",
+      "slug": "/occ/",
+      "thumbnailWebp": "",
+      "thumbnailPng": "/img/common/thumbnail-occ.png",
+      "alt": "occ",
+      "scope": ""
+    },
+    "amity": {
+      "dataId": "#js-amity",
+      "id": "js-amity",
+      "name": "Amity",
+      "category": "Landing Page",
+      "description": "Amity is B2B platform whose main purpose is to remote control the stoves at living facilities. ",
+      "slug": "/amity/",
+      "thumbnailWebp": "",
+      "thumbnailPng": "/img/common/thumbnail-amity.png",
+      "alt": "amity",
+      "scope": ""
+    },
+    "kamsa": {
+      "dataId": "#js-kamsa",
+      "id": "js-kamsa",
+      "name": "Kamsa",
+      "category": "Event Site",
+      "description": "Kamsa is a compensation management program providing real-time global salary data and expert support to make compensation review and benchmarking painless.",
+      "slug": "/kamsa/",
+      "thumbnailWebp": "",
+      "thumbnailPng": "/img/common/thumbnail-kamsa.png",
+      "alt": "kamsa",
+      "scope": ""
+    },
+    "protogetic": {
+      "dataId": "#js-protogetic",
+      "id": "js-protogetic",
+      "name": "Protogetic",
+      "category": "Blog Site",
+      "description": "The Protogetic is a portal for vendors and buyers of physical security products. It serves as a central hub for professionals in the security building and infrastructure construction industries to find and access a wide range of products.",
+      "slug": "/protogetic/",
+      "thumbnailWebp": "",
+      "thumbnailPng": "/img/common/thumbnail-protogetic.png",
+      "alt": "protogetic",
+      "scope": ""
+    }
+  }
+}

@@ -1,0 +1,74 @@
+/* Vendor
+   ----------------------------------------------------------------- */
+@use "vendor/ress";
+
+/* Foundation
+   ----------------------------------------------------------------- */
+// base
+@use "foundation/base";
+
+/* Animation（トリガー発火時のアニメーション）
+   ----------------------------------------------------------------- */
+@use "animation/is-slide-up";
+@use "animation/is-fade-up";
+@use "animation/is-slide-mask";
+@use "animation/is-slide-up-lines";
+
+/* Layout (prefix: l- )
+   ----------------------------------------------------------------- */
+@use "layout/l-header";
+@use "layout/l-home";
+@use "layout/l-container";
+@use "layout/l-footer";
+@use "layout/l-lower-about";
+@use "layout/l-single-works";
+
+/* Component (prefix: c- )
+   ----------------------------------------------------------------- */
+@use "object/component/c-button-drawer";
+@use "object/component/c-section-heading";
+@use "object/component/c-page-heading";
+@use "object/component/c-button-primary";
+@use "object/component/c-button-submit";
+
+/* Project (prefix: p- )
+   ----------------------------------------------------------------- */
+@use "object/Project/p-header";
+@use "object/Project/p-header-sns";
+@use "object/Project/p-global-nav";
+@use "object/Project/p-drawer-nav";
+@use "object/Project/p-sns";
+@use "object/Project/p-first-view";
+@use "object/Project/p-home-about";
+@use "object/Project/p-works";
+@use "object/Project/p-works-content";
+@use "object/Project/p-works-item";
+@use "object/Project/p-single-works";
+@use "object/Project/p-works-overview";
+@use "object/Project/p-works-detail";
+@use "object/Project/p-works-connect";
+@use "object/Project/p-lower-first-view";
+@use "object/Project/p-intro";
+@use "object/Project/p-profile";
+@use "object/Project/p-experience";
+@use "object/Project/p-skillset";
+@use "object/Project/p-value";
+@use "object/Project/p-form";
+@use "object/Project/p-contact";
+@use "object/Project/p-information";
+@use "object/Project/p-contact-connect";
+@use "object/Project/p-contact-thanks";
+@use "object/Project/p-footer";
+@use "object/Project/p-footer-head";
+@use "object/Project/p-footer-foot";
+
+/* Utitlity (prefix: u- )
+   ----------------------------------------------------------------- */
+@use "object/utility/u-hidden";
+@use "object/utility/u-visually-hidden";
+@use "object/utility/u-delay";
+@use "object/utility/u-weight";
+@use "object/utility/u-family";
+@use "object/utility/u-under-line";
+@use "object/utility/u-margin";
+

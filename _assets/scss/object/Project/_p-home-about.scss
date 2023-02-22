@@ -1,0 +1,100 @@
+@use "foundation/global";
+
+// Project トップページ 私について
+//--------------------------------------------------------------------------
+.p-home-about {
+  @include global.mq(lax) {
+    display: flex;
+  }
+}
+
+.p-home-about__heading {
+  color: global.$color-secondary;
+  font-size: max(24px, #{global.vw(42)});
+  @include global.lh(1);
+  font-weight: 400;
+  white-space: nowrap;
+  letter-spacing: -0.01em;
+  margin-left: -0.8%;
+
+  @include global.mq(lax) {
+    width: 40%;
+    font-size: 14.5vw;
+    margin-left: -0.8%;
+  }
+
+  @include global.mq(xl) {
+    width: 50.5%;
+  }
+}
+
+.p-home-about__profile {
+  z-index: 1;
+  width: 100%;
+
+  @include global.mq(lax) {
+    margin-top: global.vw(190);
+  }
+
+  @include global.mq(xl) {
+    width: 53%;
+  }
+
+  @include global.mq(1920px, min) {
+    max-width: 40vw;
+  }
+}
+
+.p-home-about__name-en {
+  display: block;
+  font-size: 28px;
+  @include global.lh(1);
+  font-weight: 400;
+  white-space: nowrap;
+  letter-spacing: -0.02em;
+
+  @include global.mq(md) {
+    font-size: max(28px, #{global.vw(80)});
+  }
+}
+
+.p-home-about__name-ja {
+  display: block;
+  margin-top: 4px;
+  font-weight: 400;
+  @include global.fz(12, 16);
+  @include global.lh(1.2);
+  font-family: global.$font-family-en;
+  opacity: 0.5;
+
+  @include global.mq(md) {
+    margin-top: 7px;
+  }
+
+  @include global.mq(lax) {
+    opacity: 1;
+  }
+}
+
+.p-home-about__text {
+  margin-top: 14px;
+  @include global.fz(12, 16);
+  line-height: 1.85em;
+  font-family: global.$font-family-en;
+  font-weight: 400;
+
+  @include global.mq(md) {
+    margin-top: 24px;
+  }
+
+  @include global.mq(lax) {
+    line-height: 1.8em;
+  }
+}
+
+.p-home-about__link-wrapper {
+  margin-top: 32px;
+  @include global.mq(md) {
+    margin-top: 52px;
+  }
+}

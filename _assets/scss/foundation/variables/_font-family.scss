@@ -1,0 +1,15 @@
+// Variables フォントファミリー
+//--------------------------------------------------------------------------
+@font-face {
+  font-family: "GT America Expanded Bold";
+  src: url("//db.onlinewebfonts.com/t/22b4c73e6141de7c9937f42cb58bdb4b.eot");
+  src: url("//db.onlinewebfonts.com/t/22b4c73e6141de7c9937f42cb58bdb4b.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/22b4c73e6141de7c9937f42cb58bdb4b.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/22b4c73e6141de7c9937f42cb58bdb4b.woff") format("woff"), url("//db.onlinewebfonts.com/t/22b4c73e6141de7c9937f42cb58bdb4b.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/22b4c73e6141de7c9937f42cb58bdb4b.svg#GT America Expanded Bold") format("svg");
+}
+//欧文
+$font-family-en:'Poppins', sans-serif;
+//和文
+$font-family-works:'GT America Expanded Bold';
+
+
+
+

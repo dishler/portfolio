@@ -1,5 +1,7 @@
 _gulp/node_modules/
+node_modules
 _gulp/package-lock.json
+package-lock.json
 _static/dist/
 .vscode
 

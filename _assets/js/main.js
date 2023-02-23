@@ -16,8 +16,8 @@ import { addBlendHeader, removeBlendHeader, pageTransitionHeader, scrollHide } f
 import inquiryCompleted from './common/inquiryCompleted';
 import slideUpLines from './common/slide-up-lines';
 import tabs from './common/tabs';
-import menu from './common/menu';
-import sidebarMenu from './common/menu'
+import handleScroll from './common/handleScroll';
+import sidebarMenu from './common/menu';
 import dropDown from './common/dropDown';
 
 // intersectionObserver
@@ -36,7 +36,7 @@ import setFillHeight from './drawer/setFillHeight';
 const scroll = new LocomotiveScroll({
   el: document.querySelector('[data-scroll-container]'),
   smooth: true,
-  multiplier: 1,
+  multiplier: 0.5,
 
 });
 
@@ -48,15 +48,22 @@ window.addEventListener('DOMContentLoaded', () => {
   resizeEvent();
   toggleEvent();
   scrollHide();
-
 });
 
 
 window.addEventListener('DOMContentLoaded', () => {
   tabs();
   sidebarMenu(scroll);
-  dropDown();
+  console.log('VVV');
+  scroll.on('scroll', handleScroll);
+  // dropDown();
 })
+
+// console.log('AAAAAA');
+// window.addEventListener('scroll', () => {
+//   console.log('BBBB');
+//   handleScroll();
+// });
 
 firstViewAnimation();
 slideUpLines();

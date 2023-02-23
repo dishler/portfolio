@@ -83,7 +83,7 @@
 
     &::before {
       @include global.mq(lax) {
-        background-color: global.$color-primary;;
+        background-color: global.$color-primary;
       }
     }
   }
@@ -136,8 +136,8 @@
 
 .dropdown .options {
   position: absolute;
-  top: 30px;
-  width: 100%;
+
+  top: 40px;
   background: #fff;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
   border-radius: 10px;
@@ -145,20 +145,25 @@
   display: none;
 }
 
-.dropdown.active .options::after {
+
+.dropdown.active .options {
   display: flex;
   flex-direction: column;
+  gap: 4px;
+  width: max-content;
+  z-index: map-get(global.$layer, header-inner);
 
 }
 
-.dropdown .options a {
-  padding: 12px 20px;
+.dropdown .options div {
+  // padding: 12px 20px;
   cursor: pointer;
   text-decoration: none;
-
+  width: max-content;
+  margin: 8px 24px;
 }
 
+
 .dropdown .options div:hover {
-  background: #62baea;
-  color: green;
+ color: global.$color-primary;
 }

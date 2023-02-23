@@ -116,7 +116,7 @@
  padding-top: 16px;
  padding-bottom: 52px;
   margin-right: 0px;
-  width: auto;
+  width: 25%;
 
   top: 0;
   height: 100%;
@@ -142,24 +142,26 @@
   color: global.$color-menu-icon;
   padding: 8px 0;
   font-size: 18px;
+  transition: opacity 200ms ease, transform 200ms ease;
  
   // width: 100%;
 
   &:hover,
   &:focus,
   &:active {
-      color: global.$color-primary;
-      .nav-icon {
-      fill: global.$color-primary;
-      }
+    transform: translate(5px, 0px);
     }
+}
+
+.nav-icon:hover {
+  fill: global.$color-primary;
+
 }
 
 .p--current {
   color: global.$color-primary;
-  .nav-icon {
-      fill: global.$color-primary;
-    }
+  font-weight: 600;
+
 }
 
 .p-overview__nav-sections {

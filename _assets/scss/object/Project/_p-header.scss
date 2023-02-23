@@ -8,11 +8,13 @@
   background-color: transparent;
   color: global.$color-primary;
   mix-blend-mode: normal;
+  overflow: initial;
 
   @include global.mq(lax) {
     mix-blend-mode: normal;
     color: global.$color-primary;
   }
+
 }
 
 .p-header__inner {
@@ -22,7 +24,7 @@
   justify-content: space-between;
   align-items: center;
   width: calc(100% - 48px);
-  overflow: hidden;
+  overflow: initial;
   margin-left: auto;
   margin-right: auto;
   height: 53px;

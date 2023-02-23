@@ -1,0 +1,38 @@
+
+// const navMenu = document.querySelector('.p-work-owerview__nav');
+// const navItems = document.querySelectorAll('.p-work-owerview__nav-item');
+
+const navContainerItems = document.querySelectorAll('.p-work-overview__container');
+
+
+// function to check if an element is in the viewport
+function isElementInViewport(el) {
+  const rect = el.getBoundingClientRect();
+  return (
+    rect.top >= 0 &&
+    rect.left >= 0 &&
+    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+  );
+}
+
+
+
+
+// loop through all nav items and check if they are in the viewport
+
+const handleScroll = () => {
+  console.log('handleScroll', 'Bla');
+  navContainerItems.forEach((item) => {
+    if (isElementInViewport(item)) {
+      // if an item is in the viewport, add the 'active' class to it
+      item.classList.add('p--current');
+    } else {
+      // otherwise, remove the 'active' class from it
+      item.classList.remove('p--current');
+    }
+  });
+
+}
+
+export default handleScroll;

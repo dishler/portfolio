@@ -52,6 +52,9 @@
     "locomotive-scroll": "^4.1.4",
     "svgxuse": "^1.2.6"
   },
+  "resolutions": {
+    "gift": "^0.10.2"
+  },
   "browserslist": [
     "> 0.2%, not dead",
     "not IE 11"

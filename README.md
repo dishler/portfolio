@@ -1,6 +1,6 @@
-# kokorotobita-portfolio
+# dmytroishler-portfolio
 
-![firstView]('../../_assets/img/common/main.PNG')
+![firstView](../../_assets/img/common/main.)
 
 ## 🌐 Site URL
 

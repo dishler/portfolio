@@ -1,6 +1,6 @@
 # dmytroishler-portfolio
 
-![firstView](../../_assets/img/common/main.)
+![firstView](../../_assets/img/common/main.png)
 
 ## 🌐 Site URL
 

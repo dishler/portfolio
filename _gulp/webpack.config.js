@@ -56,4 +56,4 @@ const config = {
 }
 
 
-module.exports = DEBUG ? merge(config, mode.dev) : merge(config,mode.prod);
+module.exports = DEBUG ? merge(config, mode.dev) : merge(config, mode.prod);

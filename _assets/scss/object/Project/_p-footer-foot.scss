@@ -30,6 +30,8 @@
   }
 }
 
+
+
 .p-footer-foot__nav-link {
   position: relative;
   display: inline-block;
@@ -85,4 +87,81 @@
       height: 14px;
     }
   }
+}
+
+
+
+
+
+
+.dropdown--footer {
+  position: relative;
+}
+
+.text-box {
+  margin-right: 10px;
+}
+
+.dropdown--footer::before {
+  content: "";
+  position: absolute;
+  top: 25px;
+  left: 70px;
+  z-index: 1;
+  width: 8px;
+  height: 8px;
+  border: 2px solid #333;
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
+  transform: rotate(-225deg);
+  transition: 0.5s;
+  pointer-events: none;
+}
+
+.dropdown--footer.active::before {
+  top: 22px;
+  left: 70px;
+  transform: rotate(-45deg);
+}
+
+.dropdown--footer div {
+  position: relative;
+  cursor: pointer;
+  background: #fff;
+  border: none;
+  outline: none;
+
+}
+
+.dropdown--footer .options {
+  position: absolute;
+  bottom: 60px;
+  background: #fff;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  overflow: hidden;
+  display: none;
+}
+
+
+.dropdown--footer.active .options {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: max-content;
+  z-index: map-get(global.$layer, header-inner);
+
+}
+
+.dropdown--footer .options div {
+  // padding: 12px 20px;
+  cursor: pointer;
+  text-decoration: none;
+  width: max-content;
+  margin: 8px 24px;
+}
+
+
+.dropdown--footer .options div:hover {
+  color: global.$color-primary;
 }

@@ -1,5 +1,3 @@
-
-
 export default (scroll) => {
   const sideBar = document.querySelector('.sidebar');
   sideBar.addEventListener('click', (event) => {

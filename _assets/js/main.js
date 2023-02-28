@@ -18,6 +18,7 @@ import slideUpLines from './common/slide-up-lines';
 import tabs from './common/tabs';
 import handleScroll from './common/handleScroll';
 import sidebarMenu from './common/menu';
+import dropDownFooter from './common/dropDownFooter';
 import dropDown from './common/dropDown';
 
 // intersectionObserver
@@ -57,6 +58,7 @@ window.addEventListener('DOMContentLoaded', () => {
   console.log('VVV');
   scroll.on('scroll', handleScroll);
   // dropDown();
+  // dropDownFooter();
 })
 
 // console.log('AAAAAA');

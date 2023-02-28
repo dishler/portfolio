@@ -408,6 +408,7 @@
 .p-single-works__project--foot .project-timeline {
   display: flex;
   flex-direction: column;
+  gap: 8px;
   width: 27%;
 }
 
@@ -418,9 +419,10 @@
 
 }
 
-.p-single-works__main-column .div {
+.p-single-works__main-column div {
   display: flex;
   flex-direction: column;
+  gap: 8px;
   width: max-content;
 }
 
@@ -428,6 +430,10 @@
   font-family: global.$font-family-works;
   font-weight: 700;
   font-size: 21px;
+}
+
+.p-single-works__subtitlle {
+ display: inline-block;
 }
 
 .p-single-works__context,

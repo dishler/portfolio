@@ -197,7 +197,14 @@
 }
 #my-role>div>div>ul>li {
   list-style:disc;
+}
 
+#results-and-takeaways>div>div>ul {
+  margin-left: 24px;
+}
+
+#results-and-takeaways>div>div>ul>li {
+  list-style: disc;
 }
 
 .p-work-overview--amity {
@@ -314,9 +321,12 @@ position: absolute;
   font-size: 18px;
   line-height: 160%;
   font-family: global.$font-family-en;
-
-  
-  
+    h4 {
+      margin-top: 20px;
+      margin-bottom: 12px;
+      font-weight: 500;
+      font-size: 25px;
+    }
 }
 
 .p-work-overview__description--protogetic{

@@ -51,6 +51,7 @@
 }
 
 .p-works-content__category {
+
   margin-top: 32px;
   font-size: 32px;
   @include global.lh(1.4);
@@ -64,6 +65,12 @@
   @include global.mq(lax) {
     margin-top: max(8px, #{global.vw(8)});
   }
+}
+
+.p-works-content__hashtags {
+  font-weight: 500;
+  font-size: 22px;
+  color: #9EA0A6;
 }
 
 .p-works-content__text {

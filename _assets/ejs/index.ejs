@@ -47,6 +47,7 @@
                 data-scroll-direction="horizontal">
                 Product mindset
               </h2>
+
               <div class="p-home-about__profile">
                 <h3 class="p-home-about__name">
                   <span class="p-home-about__name-en">
@@ -93,9 +94,13 @@
                           <h3 class="p-works-content__title is-slide-mask">
                             <%= jsonData.works[work].name %>
                           </h3><br>
-                          <p class="p-works-content__category is-slide-mask">
-                            <%= jsonData.works[work].category %>
-                          </p><br>
+                          <div class="p-works-content__category is-slide-mask">
+                            <img src="<%= jsonData.works[work].category %>" class="p-works-item__icon"
+                              alt="<%= jsonData.works[work].alt %>">
+                            <span class="p-works-content__hashtags">
+                              <%= jsonData.works[work].hashtag %>
+                            </span>
+                          </div><br>
                           <p class="p-works-content__text is-slide-mask">
                             <%= jsonData.works[work].description %>
                           </p><br>
@@ -137,6 +142,7 @@
                                 <%= jsonData.works[work].name %>
                               </h3>
                               <p class="p-works-item__category">
+
                                 <%= jsonData.works[work].category %> / <%= jsonData.works[work].scope %>
                               </p>
                             </div>
@@ -152,7 +158,7 @@
       </div>
 
       <%# 次ページへの導線 %>
-        <a href="mailto:hellodmytroishler@gmail.com class=" p-contact-connect" style="transform: translate(0px, 0px);">
+        <a href="mailto:hellodmytroishler@gmail.com" class=" p-contact-connect" style="transform: translate(0px, 0px);">
           <p class="p-contact-connect__text-wrapper">
             <span class="p-contact-connect__text" data-text="Contact Me">
               Contact Me

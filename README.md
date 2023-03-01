@@ -1,7 +1,5 @@
 # dmytroishler-portfolio
 
-![firstView](../../_assets/img/common/main.png)
-
 ## 🌐 Site URL
 
 #### **https://dishlerportfolio.com**

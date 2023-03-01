@@ -6,7 +6,7 @@
 
 ## 🎁 Overview
 
-This is a portfolio site of Shin Tobita. It was created for job hunting.
+This is a portfolio site of Dmytro Ishler.
 
 ## Usage
 

@@ -4,7 +4,7 @@
  */
 
 // ライブラリ
-import barba from '@modules/@barba/core';
+// import barba from '@modules/@barba/core';
 import LocomotiveScroll from '@modules/locomotive-scroll/dist/locomotive-scroll.js';
 
 // common
@@ -13,7 +13,7 @@ import firstViewAnimation from './common/firstViewTrigger';
 import replaceHead from './common/replaceHead';
 import { initLoading, endLoading } from './common/loading';
 import { addBlendHeader, removeBlendHeader, pageTransitionHeader, scrollHide } from './common/header';
-import inquiryCompleted from './common/inquiryCompleted';
+// import inquiryCompleted from './common/inquiryCompleted'; 
 import slideUpLines from './common/slide-up-lines';
 import tabs from './common/tabs';
 import handleScroll from './common/handleScroll';
@@ -61,11 +61,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // dropDownFooter();
 })
 
-// console.log('AAAAAA');
-// window.addEventListener('scroll', () => {
-//   console.log('BBBB');
-//   handleScroll();
-// });
+
 
 firstViewAnimation();
 slideUpLines();
@@ -84,12 +80,12 @@ barba.init({
         removeBlendHeader();
       }
     },
-    {
-      namespace: 'memories',
-      beforeEnter(data) {
-        addBlendHeader();
-      }
-    },
+    // {
+    //   namespace: 'memories',
+    //   beforeEnter(data) {
+    //     addBlendHeader();
+    //   }
+    // },
     {
       namespace: 'home',
       afterEnter(data) {
@@ -104,13 +100,13 @@ barba.init({
         addBlendHeader();
       }
     },
-    {
-      namespace: 'contact',
-      afterEnter(data) {
-        addBlendHeader();
-        inquiryCompleted();
-      }
-    },
+    // {
+    //   namespace: 'contact',
+    //   afterEnter(data) {
+    //     addBlendHeader();
+    //     inquiryCompleted();
+    //   }
+    // },
   ]
 });
 
@@ -126,7 +122,7 @@ barba.hooks.beforeEnter((data) => {
   replaceHead(data);
   removeEvent();
   pageTransitionHeader();
-  scrollHide();
+  // scrollHide();
 })
 
 barba.hooks.after((data) => {

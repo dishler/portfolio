@@ -9,8 +9,8 @@
   @include clampFunction('プロパティ', 下限ブレークポイント, 上限ブレークポイント, 最小値, 最大値);
 */
 @mixin clampFunction($property, $minBp, $maxBp, $minVal, $maxVal) {
-  $a: round(100 * ($maxVal - $minVal) / ($maxBp - $minBp));
-  $b: round($minVal - ($minBp / 100) * $a);
+  $a: round(calc(100 * ($maxVal - $minVal) / ($maxBp - $minBp)));
+  $b: round($minVal - calc(($minBp / 100)) * $a);
   $vw: calc(#{$a}vw + #{$b}px);
 
    // フォールバック

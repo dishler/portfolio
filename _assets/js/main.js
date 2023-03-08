@@ -4,7 +4,7 @@
  */
 
 // ライブラリ
-// import barba from '@modules/@barba/core';
+import barba from '@modules/@barba/core';
 import LocomotiveScroll from '@modules/locomotive-scroll/dist/locomotive-scroll.js';
 
 // common
@@ -122,7 +122,7 @@ barba.hooks.beforeEnter((data) => {
   replaceHead(data);
   removeEvent();
   pageTransitionHeader();
-  // scrollHide();
+  scrollHide();
 })
 
 barba.hooks.after((data) => {

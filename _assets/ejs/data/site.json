@@ -52,7 +52,7 @@
       "hashtag": "#Ui/Ux #Nativedesign #Webdesign",
       "description": "OCC is a roofing code report software that helps professionals access accurate, up-to-date codes, saving time and reducing costs. It minimizes frustration and tension related to finding reliable roofing codes.",
       "slug": "/occ/",
-      "thumbnailWebp": "",
+      "thumbnailWebp": "/img/common/thumbnail-occ.png",
       "thumbnailPng": "/img/common/thumbnail-occ.png",
       "alt": "occ",
       "scope": ""
@@ -65,7 +65,7 @@
       "hashtag": "#Ui/Ux    #Webdesign     #Uxresearch",
       "description": "Amity is B2B platform whose main purpose is to remote control the stoves at living facilities. ",
       "slug": "/amity/",
-      "thumbnailWebp": "",
+      "thumbnailWebp": "/img/common/thumbnail-amity.png",
       "thumbnailPng": "/img/common/thumbnail-amity.png",
       "alt": "amity",
       "scope": ""
@@ -78,7 +78,7 @@
       "hashtag": "#Productdesign  #Uxresearch",
       "description": "Kamsa is a compensation management program providing real-time global salary data and expert support to make compensation review and benchmarking painless.",
       "slug": "/kamsa/",
-      "thumbnailWebp": "",
+      "thumbnailWebp": "/img/common/thumbnail-kamsa.png",
       "thumbnailPng": "/img/common/thumbnail-kamsa.png",
       "alt": "kamsa",
       "scope": ""
@@ -91,7 +91,7 @@
       "hashtag": "#Productdesign  #Uxresearch",
       "description": "The Protogetic is a portal for vendors and buyers of physical security products. It serves as a central hub for professionals in the security building and infrastructure construction industries to find and access a wide range of products.",
       "slug": "/protogetic/",
-      "thumbnailWebp": "",
+      "thumbnailWebp": "/img/common/thumbnail-protogetic.png",
       "thumbnailPng": "/img/common/thumbnail-protogetic.png",
       "alt": "protogetic",
       "scope": ""

@@ -127,7 +127,7 @@
 .p-work-owerview__nav ,  .content{
   display: flex;
   flex-direction: column;
-    gap: 16px;
+    gap: 14px;
     
 }
 
@@ -140,7 +140,7 @@
 
 .p-work-owerview__nav-item {
   color: global.$color-menu-icon;
-  padding: 8px 0;
+  padding: 6px 0;
   font-size: 18px;
   transition: opacity 200ms ease, transform 200ms ease;
  

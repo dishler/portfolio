@@ -77,7 +77,7 @@ barba.init({
       namespace: 'single',
       afterEnter(data) {
         toggleChangeBg(data.next.container.id);
-        removeBlendHeader();
+        // removeBlendHeader();
       }
     },
     // {
@@ -100,13 +100,13 @@ barba.init({
         addBlendHeader();
       }
     },
-    // {
-    //   namespace: 'contact',
-    //   afterEnter(data) {
-    //     addBlendHeader();
-    //     inquiryCompleted();
-    //   }
-    // },
+    {
+      namespace: 'contact',
+      afterEnter(data) {
+        addBlendHeader();
+        inquiryCompleted();
+      }
+    },
   ]
 });
 
@@ -126,10 +126,12 @@ barba.hooks.beforeEnter((data) => {
 })
 
 barba.hooks.after((data) => {
+  console.log('ddd');
   scroll.init();
   window.scrollTo(0, 0);
   window.addEventListener('resize', setFillHeight);
-  setFillHeight();
+  window.location.reload();
+  etFillHeight();
   firstViewAnimation();
   endLoading();
   slideUpLines();

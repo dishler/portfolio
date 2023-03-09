@@ -77,6 +77,8 @@ barba.init({
       namespace: 'single',
       afterEnter(data) {
         toggleChangeBg(data.next.container.id);
+        addBlendHeader();
+        window.location.reload();
         // removeBlendHeader();
       }
     },
@@ -131,7 +133,7 @@ barba.hooks.after((data) => {
   window.scrollTo(0, 0);
   window.addEventListener('resize', setFillHeight);
   window.location.reload();
-  etFillHeight();
+  setFillHeight();
   firstViewAnimation();
   endLoading();
   slideUpLines();

@@ -76,18 +76,12 @@ barba.init({
     {
       namespace: 'single',
       afterEnter(data) {
-        toggleChangeBg(data.next.container.id);
+        // toggleChangeBg(data.next.container.id);
         addBlendHeader();
         window.location.reload();
         // removeBlendHeader();
       }
     },
-    // {
-    //   namespace: 'memories',
-    //   beforeEnter(data) {
-    //     addBlendHeader();
-    //   }
-    // },
     {
       namespace: 'home',
       afterEnter(data) {

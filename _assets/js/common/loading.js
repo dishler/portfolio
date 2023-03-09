@@ -3,10 +3,10 @@ const links = document.querySelectorAll('a');
  * ローディング開始
  */
 export function initLoading() {
-  document.body.style.cursor = 'wait';
+  document.body.style.cursor = 'pointer';
   links.forEach(link => {
     link.addEventListener('click', function () {
-      link.style.cursor = 'wait';
+      link.style.cursor = 'auto';
     });
   });
 }

@@ -22,7 +22,7 @@ import {
 import slideUpLines from "./common/slide-up-lines";
 import tabs from "./common/tabs";
 import handleScroll from "./common/handleScroll";
-import sidebarMenu from "./common/menu";
+import sidebarMenu, { sideBarColor } from "./common/menu";
 import dropDownFooter from "./common/dropDownFooter";
 import dropDown from "./common/dropDown";
 
@@ -56,10 +56,11 @@ window.addEventListener("DOMContentLoaded", () => {
   tabs();
   sidebarMenu(scroll);
   console.log("VVV");
-  scroll.on("scroll", handleScroll);
+
   // dropDown();
   // dropDownFooter();
 });
+
 
 firstViewAnimation();
 slideUpLines();
@@ -72,35 +73,29 @@ pageTransitionHeader();
 barba.init({
   views: [
     {
-      namespace: "first",
+      namespace: "single",
       afterEnter(data) {
+        followContents();
+        setTimeout(() => {
+          window.location.reload();
+        }, 3500);
+      },
+    },
+    {
+      namespace: "kamsa",
+      afterEnter(data) {
+        followContents();
         setTimeout(() => {
           window.location.reload();
         }, 3000);
       },
     },
     {
-      namespace: "second",
+      namespace: "protogetic",
       afterEnter(data) {
         setTimeout(() => {
           window.location.reload();
-        }, 3000);
-      },
-    },
-    {
-      namespace: "third",
-      afterEnter(data) {
-        setTimeout(() => {
-          window.location.reload();
-        }, 3000);
-      },
-    },
-    {
-      namespace: "fourth",
-      afterEnter(data) {
-        setTimeout(() => {
-          location.reload();
-        }, 3000);
+        }, 5000);
       },
     },
     {
@@ -131,9 +126,9 @@ barba.hooks.before((data) => {
   initLoading();
 });
 
-barba.hooks.beforeLeave((data) => {
-  scroll.destroy();
-});
+// barba.hooks.beforeLeave((data) => {
+//   scroll.destroy();
+// });
 
 barba.hooks.beforeEnter((data) => {
   replaceHead(data);
@@ -146,10 +141,42 @@ barba.hooks.after((data) => {
   console.log("ddd");
   scroll.init();
   window.scrollTo(0, 0);
-  window.addEventListener("resize", setFillHeight);
+  // window.addEventListener("resize", setFillHeight);
 
   setFillHeight();
   firstViewAnimation();
   endLoading();
   slideUpLines();
 });
+
+
+
+
+// const sidebar = container.querySelector('.sidebar');
+// if (sidebar) {
+//   console.log('sidebar');
+//   sidebar.style.position = 'sticky';
+//   sidebar.style.top = '0';
+// }
+
+
+
+// let stickyEl = document.querySelector('.sidebar');
+// console.log(stickyEl);
+// let stickyPos = stickyEl.offsetTop;
+// console.log(stickyPos);
+
+// // Barba.js hooks
+// barba.hooks.beforeEnter((data) => {
+//   // Check if the sticky element exists and has the sticky position
+//   if (stickyEl && getComputedStyle(stickyEl).position === 'sticky') {
+//     // Set the sticky element position to the saved position
+//     stickyEl.style.top = stickyPos + 'px';
+//   }
+// });
+
+// barba.hooks.after((data) => {
+//   // Save the position of the sticky element again
+//   stickyEl = document.querySelector('.sidebar');
+//   stickyPos = stickyEl.offsetTop;
+// });

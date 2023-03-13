@@ -203,14 +203,10 @@
 .p-single-works__video-wrapper {
   position: relative;
   overflow: hidden;
-  padding-top: 75.5%;
-  margin-top: max(42px, #{global.vw(105)});
-
+      top: -38px;
   video {
     display: inline-block;
-    position: absolute;
-    left: -96px;
-    bottom: 48px;
+
     width: 100%;
     height: 100%;
   }

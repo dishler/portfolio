@@ -75,7 +75,8 @@
   position: relative;
   display: inline-block;
   transition: color 0.4s ease-in-out;
-  background: linear-gradient(transparent 0, global.$color-primary 40%) no-repeat;
+  background: linear-gradient(transparent 0, global.$color-primary 40%)
+    no-repeat;
   background-position: bottom right;
   background-size: 0 1px;
   @include global.lh(1.7);
@@ -106,31 +107,26 @@
   font-weight: 300;
 }
 
-
-
-
-
-
-.p-work-owerview__sidebar-menu, .sidebar {
+.p-work-owerview__sidebar-menu,
+.sidebar {
   position: sticky;
- padding-top: 16px;
- padding-bottom: 52px;
+  // top: 16px;
+  // padding-top: 16px;
+  padding-bottom: 52px;
   margin-right: 0px;
   width: 25%;
 
   top: 0;
   height: 100%;
   overflow: hidden;
-  
 }
 
-.p-work-owerview__nav ,  .content{
+.p-work-owerview__nav,
+.content {
   display: flex;
   flex-direction: column;
-    gap: 14px;
-    
+  gap: 14px;
 }
-
 
 .p-work-owerview__nav-item .nav-icon {
   margin-right: 12px;
@@ -143,25 +139,23 @@
   padding: 6px 0;
   font-size: 18px;
   transition: opacity 200ms ease, transform 200ms ease;
- 
+
   // width: 100%;
 
   &:hover,
   &:focus,
   &:active {
     transform: translate(5px, 0px);
-    }
+  }
 }
 
 .nav-icon:hover {
   fill: global.$color-primary;
-
 }
 
 .p--current {
   color: global.$color-primary;
   font-weight: 600;
-
 }
 
 .p-overview__nav-sections {
@@ -171,9 +165,7 @@
 .p-work-overview__container {
   margin-bottom: 120px;
   max-width: 90%;
-
 }
-
 
 .p-work-overview__title {
   font-family: global.$font-family-works;
@@ -187,38 +179,29 @@
   color: global.$color-occ;
 }
 
-#the-solution>div>img {
+#the-solution > div > .img_occ-02 {
   position: relative;
   left: 160px;
 }
 
-#my-role>div>div>ul {
-  margin-left: 24px ;
-}
-#my-role>div>div>ul>li {
-  list-style:disc;
-}
-
-#results-and-takeaways>div>div>ul {
+#my-role > div > div > ul {
   margin-left: 24px;
 }
-
-#results-and-takeaways>div>div>ul>li {
+#my-role > div > div > ul > li {
   list-style: disc;
 }
 
-.p-work-overview--amity {
-color: global.$color-amity;
+#results-and-takeaways > div > div > ul {
+  margin-left: 24px;
 }
 
-.p-work-overview--kamsa {
-color: global.$color-kamsa;
+#results-and-takeaways > div > div > ul > li {
+  list-style: disc;
 }
 
 .p-work-overview--protogetic {
-color: global.$color-protogetic;
+  color: global.$color-protogetic;
 }
-
 
 .p-work-overview__personas--img {
   position: relative;
@@ -229,65 +212,54 @@ color: global.$color-protogetic;
     margin-bottom: 300px;
   }
 
-  .img-2{
-  display: block;
-  position: absolute;
-  top: 232px;
-  left: 88px;
-}
-
-
+  .img-2 {
+    display: block;
+    position: absolute;
+    top: 232px;
+    left: 88px;
+  }
 }
 
 .p-owerview__visual-occ--img {
   margin-bottom: -300px;
-  
+
   .img-8_1 {
     width: 50%;
-
   }
 
   .img-8_2 {
     position: relative;
     bottom: 400px;
-      left: 230px;
-      width: 70%;
+    left: 230px;
+    width: 70%;
+  }
 }
-
-
-
-
-
-}
-
 
 .img-04 {
   margin-top: 40px;
 }
 .p-owerview__visual-kamsa--img {
-position: relative;
-width: 70%;
-margin-top: 8vw;
- margin-bottom: 38vw;
+  position: relative;
+  width: 70%;
+  margin-top: 8vw;
+  margin-bottom: 38vw;
 
-     .img-08_1 {
+  .img-08_1 {
+    position: absolute;
+    top: -100px;
+  }
 
-position: absolute;
-   top: -100px;
-     }
-  
-     .img-08_2 {
-      position: absolute;
-        left: 420px;
-     }
+  .img-08_2 {
+    position: absolute;
+    left: 420px;
+  }
 }
 
- .img-05 {
-   position: relative;
-   left: 13vw;
-   width: 80%;
- }
-
+.img-05 {
+  position: relative;
+  left: 13vw;
+  width: 80%;
+}
 
 .p-owerview__visual-protogetic--img {
   position: relative;
@@ -304,10 +276,9 @@ position: absolute;
 
   .img-05_3 {
     position: absolute;
-        width: 50%;
-          top: 140px;
-          right: -40px;
-        
+    width: 50%;
+    top: 140px;
+    right: -40px;
   }
 }
 .p-work-overview__app--tabs {
@@ -321,19 +292,19 @@ position: absolute;
   font-size: 18px;
   line-height: 160%;
   font-family: global.$font-family-en;
-    h4 {
-      margin-top: 20px;
-      margin-bottom: 12px;
-      font-weight: 500;
-      font-size: 25px;
-    }
+  h4 {
+    margin-top: 20px;
+    margin-bottom: 12px;
+    font-weight: 500;
+    font-size: 25px;
+  }
 }
 
-.p-work-overview__description--protogetic{
+.p-work-overview__description--protogetic {
   li {
-      list-style-type: disc;
-      margin-left: 24px;
-    }
+    list-style-type: disc;
+    margin-left: 24px;
+  }
 }
 
 .tabs__item--description {
@@ -341,37 +312,31 @@ position: absolute;
   margin-top: 18px;
 }
 
-
-
 .tabs__btn {
   color: global.$color-hat;
 }
 
-.tabs__btn:hover {
-  color: global.$color-primary;
-}
-
-.tab-content-active {
-  color: global.$color-primary;
-}
-
-
+// .tabs__btn:hover {
+//   color: global.$color-primary;
+// }
 
 .tab-content {
   display: none;
 }
 
 .tab-content-active {
+  color: global.$color-primary;
   display: block;
 }
 
 
+
 .tab-content__item {
+  margin-top: 100px;
   display: flex;
   flex-direction: column;
   gap: 60px;
 }
-
 
 .p-work-overview__app--item button {
   font-family: global.$font-family-works;
@@ -380,15 +345,13 @@ position: absolute;
   gap: 8px;
 
   .btn-reset {
-      font-size: 72px;
-    }
+    font-size: 72px;
+  }
 
   .btn-reset--2 {
-      font-size: 52px
-    }
-
+    font-size: 52px;
+  }
 }
-
 
 .p-work-overview__hat {
   color: global.$color-hat;
@@ -399,20 +362,26 @@ position: absolute;
 
 .tabs__item--description {
   font-family: global.$font-family-en;
-  margin-top: 16px; 
+  margin-top: 16px;
+}
+
+.p-works-overview__link {
+  color: global.$color-primary;
+
+  &::before {
+    background-color: global.$color-primary;
+  }
+}
+
+.p-works-overview__heading {
+  &::after {
+    background-color: global.$color-primary;
+  }
 }
 
 
-    .p-works-overview__link {
-      color: global.$color-primary;
-  
-      &::before {
-        background-color: global.$color-primary;
-      }
-    }
-  
-    .p-works-overview__heading {
-      &::after {
-        background-color: global.$color-primary;
-      }
-    }
+.p-work-owerview-vd {
+  display: flex;
+flex-direction: column;
+gap: 80px;
+}

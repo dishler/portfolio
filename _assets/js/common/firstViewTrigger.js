@@ -3,5 +3,6 @@
  */
 export default () => {
   const firstViewElement = document.getElementById('js-first-view');
+
   firstViewElement.classList.add('is-inview');
-};
+}

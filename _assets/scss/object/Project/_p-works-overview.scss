@@ -31,6 +31,7 @@
 
 .p-works-overview__row {
   font-family: global.$font-family-en;
+
   @include global.mq(md) {
     display: flex;
     align-items: baseline;
@@ -75,8 +76,7 @@
   position: relative;
   display: inline-block;
   transition: color 0.4s ease-in-out;
-  background: linear-gradient(transparent 0, global.$color-primary 40%)
-    no-repeat;
+  background: linear-gradient(transparent 0, global.$color-primary 40%) no-repeat;
   background-position: bottom right;
   background-size: 0 1px;
   @include global.lh(1.7);
@@ -179,25 +179,51 @@
   color: global.$color-occ;
 }
 
-#the-solution > div > .img_occ-02 {
-  position: relative;
-  left: 160px;
+
+#the-solution {
+  .img_occ-02 {
+    position: relative;
+    left: 160px;
+  }
+
+  .kamsa {
+    margin-bottom: 0px;
+    max-width: 110%;
+  }
+
+  .p-work-overview__description {
+    max-width: 90%;
+  }
 }
 
-#my-role > div > div > ul {
-  margin-left: 24px;
-}
-#my-role > div > div > ul > li {
-  list-style: disc;
+#my-role {
+  ul {
+    margin-left: 24px;
+  }
+
+  li {
+    list-style: disc;
+  }
 }
 
-#results-and-takeaways > div > div > ul {
-  margin-left: 24px;
+
+#results-and-takeaways {
+  ul {
+    margin-left: 24px;
+  }
+
+  li {
+    list-style: disc;
+  }
 }
 
-#results-and-takeaways > div > div > ul > li {
-  list-style: disc;
+.amity,
+.kamsa,
+.protogetic {
+  margin-top: 40px;
 }
+
+
 
 .p-work-overview--protogetic {
   color: global.$color-protogetic;
@@ -238,6 +264,7 @@
 .img-04 {
   margin-top: 40px;
 }
+
 .p-owerview__visual-kamsa--img {
   position: relative;
   width: 70%;
@@ -268,6 +295,7 @@
   img {
     width: 70%;
   }
+
   .img-05_2 {
     position: absolute;
     top: 60px;
@@ -281,17 +309,19 @@
     right: -40px;
   }
 }
+
 .p-work-overview__app--tabs {
   display: flex;
   justify-content: space-between;
 }
 
 .p-work-overview__description {
-  margin-bottom: 16px;
+  margin-bottom: 40px;
   font-weight: 400;
   font-size: 18px;
   line-height: 160%;
   font-family: global.$font-family-en;
+
   h4 {
     margin-top: 20px;
     margin-bottom: 12px;
@@ -335,7 +365,11 @@
   margin-top: 100px;
   display: flex;
   flex-direction: column;
-  gap: 60px;
+  gap: 120px;
+
+  h3 {
+    margin-bottom: 1px !important;
+  }
 }
 
 .p-work-overview__app--item button {
@@ -382,6 +416,22 @@
 
 .p-work-owerview-vd {
   display: flex;
-flex-direction: column;
-gap: 80px;
+  flex-direction: column;
+
+  .p-work-overview__title:not(:first-child) {
+    margin-top: 120px;
+  }
+
+  .protogetic {
+    box-shadow: 0px 0px 20px 0px #B6B6B6;
+  }
+
+  .kamsa {
+    max-width: 90%;
+    box-shadow: 0px 0px 20px 0px #B6B6B6;
+  }
+
+  .kamsa:last-child {
+    margin-bottom: 120px;
+  }
 }

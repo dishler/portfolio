@@ -1,6 +1,6 @@
 const gulp = require('gulp');
 const del = require('del');
-const deploy = require('gulp-gh-pages');
+const pages = require('gh-pages');
 
 
 const env = process.env.NODE_ENV ? process.env.NODE_ENV.trim() : '';
@@ -10,9 +10,13 @@ const env = process.env.NODE_ENV ? process.env.NODE_ENV.trim() : '';
 /**
  * Push build to gh-pages
  */
-gulp.task('deploy', function () {
-  return gulp.src("../_static/dist/**/*")
-    .pipe(deploy())
+// gulp.task('deploy', function () {
+//   return gulp.src("../_static/dist/**/*")
+//     .pipe(deploy())
+// });
+
+gulp.task('deploy', () => {
+  return pages.publish('../_static/dist')
 });
 
 

@@ -76,7 +76,8 @@
   position: relative;
   display: inline-block;
   transition: color 0.4s ease-in-out;
-  background: linear-gradient(transparent 0, global.$color-primary 40%) no-repeat;
+  background: linear-gradient(transparent 0, global.$color-primary 40%)
+    no-repeat;
   background-position: bottom right;
   background-size: 0 1px;
   @include global.lh(1.7);
@@ -179,7 +180,6 @@
   color: global.$color-occ;
 }
 
-
 #the-solution {
   .img_occ-02 {
     position: relative;
@@ -206,7 +206,6 @@
   }
 }
 
-
 #results-and-takeaways {
   ul {
     margin-left: 24px;
@@ -222,8 +221,6 @@
 .protogetic {
   margin-top: 40px;
 }
-
-
 
 .p-work-overview--protogetic {
   color: global.$color-protogetic;
@@ -359,8 +356,6 @@
   display: block;
 }
 
-
-
 .tab-content__item {
   margin-top: 100px;
   display: flex;
@@ -413,7 +408,6 @@
   }
 }
 
-
 .p-work-owerview-vd {
   display: flex;
   flex-direction: column;
@@ -424,15 +418,27 @@
   }
 
   .protogetic {
-    box-shadow: 0px 0px 20px 0px #B6B6B6;
+    box-shadow: 0px 0px 20px 0px #b6b6b6;
   }
 
   .kamsa {
     max-width: 90%;
-    box-shadow: 0px 0px 20px 0px #B6B6B6;
+    box-shadow: 0px 0px 20px 0px #b6b6b6;
   }
 
   .kamsa:last-child {
     margin-bottom: 120px;
+  }
+}
+
+.p-work-visual-design-pictures {
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+
+  .p-work-sonum-video {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
   }
 }

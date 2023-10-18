@@ -117,7 +117,7 @@
                       algorithm.
                     </div>
                     <img src="../../img/common/sonum-01.png" alt="p-work-overview-image" class="p-work-overview__image"
-                      style="width: 80%">
+                      style="width: 80%" data-scroll data-scroll-speed="0.7" data-scroll-direction="horizontal">
                   </div>
                 </div>
                 <div id="the-challenge">
@@ -143,8 +143,7 @@
                       that met stakeholder goals.
                     </div>
                     <img src="../../img/common/sonum-02.png" alt="p-work-overview-image" class="img_sonum-02"
-                      class="p-work-overview__image" data-scroll data-scroll-speed="0.7"
-                      data-scroll-direction="horizontal">
+                      class="p-work-overview__image">
                   </div>
                 </div>
                 <div id="my-role">
@@ -198,20 +197,31 @@
                 <div id="wireframes">
                   <div class="p-work-overview__container" style="transform: translate(0px, 0px)">
                     <h3 class="p-work-overview--occ p-work-overview__title" id="wireframes">Wireframes</h3>
-                    <img src="../../img/common/sonum-05.png" alt="p-work-overview-image" class="--img">
+                    <!-- <img src="../../img/common/sonum-05.png" alt="p-work-overview-image" class="--img"> -->
+                    <iframe
+                      src="https://player.vimeo.com/video/874895536?autopause=0&autoplay=1&loop=1&title=0&muted=1&byline=0&portrait=0"
+                      width="1200" height="700" frameborder="0" allowfullscreen controls="0"
+                      webkitAllowFullScreen></iframe>
                   </div>
                 </div>
                 <div id="visual-design">
                   <div class="p-work-overview__container" style="transform: translate(0px, 0px)">
                     <h3 class="p-work-overview--occ p-work-overview__title" id="visual-design">Visual Design</h3>
-                    <img src="../../img/common/sonum-06.png" alt="p-work-overview-image" class="--img">
-                    <img src="../../img/common/sonum-07.png" alt="p-work-overview-image" class="--img">
-                    <img src="../../img/common/sonum-08.png" alt="p-work-overview-image" class="--img">
-                    <img src="../../img/common/sonum-09.png" alt="p-work-overview-image" class="--img">
-                    <img src="../../img/common/sonum-10.png" alt="p-work-overview-image" class="--img">
-                    <img src="../../img/common/sonum-11.png" alt="p-work-overview-image" class="--img">
-                    <img src="../../img/common/sonum-12.png" alt="p-work-overview-image" class="--img">
-                    <img src="../../img/common/sonum-13.png" alt="p-work-overview-image" class="--img">
+                    <div class="p-work-visual-design-pictures">
+                      <img src="../../img/common/sonum-06.png" alt="p-work-overview-image" class="--img">
+                      <img src="../../img/common/sonum-07.png" alt="p-work-overview-image" class="--img">
+                      <img src="../../img/common/sonum-08.png" alt="p-work-overview-image" class="--img">
+                      <img src="../../img/common/sonum-09.png" alt="p-work-overview-image" class="--img">
+                      <img src="../../img/common/sonum-10.png" alt="p-work-overview-image" class="--img">
+                      <div class="p-work-sonum-video">
+                        <img src="../../img/common/sonum-11.png" alt="p-work-overview-image" class="--img">
+                        <iframe
+                          src="https://player.vimeo.com/video/874896962?autopause=0&autoplay=1&loop=1&title=0&muted=1&byline=0&portrait=0"
+                          width="1200" height="700" frameborder="0" allowfullscreen></iframe>
+                      </div>
+                      <img src="../../img/common/sonum-12.png" alt="p-work-overview-image" class="--img">
+                      <img src="../../img/common/sonum-13.png" alt="p-work-overview-image" class="--img">
+                    </div>
 
                   </div>
                 </div>
@@ -255,18 +265,7 @@
 
           <%# 制作実績導線 %>
             <div class="p-works-connect" style="transform: translate(0px, 0px);">
-              <a href="/protogetic/" class="p-works-connect__link">
-                <picture class="p-works-connect__bg">
-                  <source srcset="/img/common/thumbnail-protogetic.png" type="image/png" />
-                  <img src="/img/common/thumbnail-protogetic.png" width="770" height="781" alt="Protogetic"
-                    loading="lazy">
-                </picture>
-                <p class="p-works-connect__text-wrapper">
-                  <span class="p-works-connect__text" data-text="Protogetic">
-                    Prev
-                  </span>
-                </p>
-              </a>
+
               <a href="/occ/" class="p-works-connect__link">
                 <picture class="p-works-connect__bg">
                   <source srcset="/img/common/thumbnail-occ.png" type="image/png" />
@@ -274,6 +273,17 @@
                 </picture>
                 <p class="p-works-connect__text-wrapper">
                   <span class="p-works-connect__text" data-text="Occ">
+                    Next
+                  </span>
+                </p>
+              </a>
+              <a href="/amity/" class="p-works-connect__link">
+                <picture class="p-works-connect__bg">
+                  <source srcset="/img/common/thumbnail-amity.png" type="image/png" />
+                  <img src="/img/common/thumbnail-amity.png" width="770" height="781" alt="Amity" loading="lazy">
+                </picture>
+                <p class="p-works-connect__text-wrapper">
+                  <span class="p-works-connect__text" data-text="Amity">
                     Next
                   </span>
                 </p>

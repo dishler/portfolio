@@ -3,20 +3,20 @@
 // Animation スライドアップ
 //--------------------------------------------------------------------------
 
-//ラッパースタイル（親要素）
+//wrapper style (parent element)
 .is-wrap {
   display: block;
   overflow: hidden;
 }
 
-//子要素
+// child element
 .is-slide-up {
   display: inline-block;
   transform: translateY(120%);
   transition: transform 1.7s global.ease(out-expo);
 }
 
-//トリガー発火後
+// after trigger ignition
 .is-inview {
   .is-slide-up {
     transform: translateY(0);

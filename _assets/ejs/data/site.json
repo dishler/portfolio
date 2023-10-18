@@ -17,6 +17,12 @@
       "type": "article",
       "slug": "/about/"
     },
+    "sonum": {
+      "name": "Sonum",
+      "description": "Sonum is a music streaming service that puts the social aspect in the spotlight. Whereas Twitter, Facebook & Co are about sharing more than ever - music streaming is heading in the opposite direction: a simple exchange between person &  algorithm.",
+      "type": "article",
+      "slug": "/sonum/"
+    },
     "occ": {
       "name": "One Click Code",
       "description": "OCC is a roofing code report software that helps professionals access accurate, up-to-date codes, saving time and reducing costs. It minimizes frustration and tension related to finding reliable roofing codes.",
@@ -44,6 +50,19 @@
   },
   "//制作実績": "",
   "works": {
+    "sonum": {
+      "dataId": "#js-sonum",
+      "id": "js-sonum",
+      "name": "Sonum",
+      "category": "/img/svg/icon-usa.png",
+      "hashtag": "#Ui #IOS #Landingpage",
+      "description": "Sonum is a music streaming service that puts the social aspect in the spotlight. Whereas Twitter, Facebook & Co are about sharing more than ever - music streaming is heading in the opposite direction: a simple exchange between person &  algorithm.",
+      "slug": "/sonum/",
+      "thumbnailWebp": "/img/common/thumbnail-sonum.png",
+      "thumbnailPng": "/img/common/thumbnail-sonum.png",
+      "alt": "sonum",
+      "scope": ""
+    },
     "occ": {
       "dataId": "#js-occ",
       "id": "js-occ",
